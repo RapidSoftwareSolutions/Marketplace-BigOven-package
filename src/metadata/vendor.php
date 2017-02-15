@@ -8,7 +8,7 @@ return array (
     'keywords' => array ('API', 'recipe', 'cooking', 'BigOven'),
     'accounts' => array (
         'domain' => 'bigoven.com',
-        'credentials' => array ('apiKey', 'username', 'password'),
+        'credentials' => array ('apiKey', 'credentialsUsername', 'credentialsPassword'),
     ),
     'blocks' => array (
         array (
