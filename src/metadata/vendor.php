@@ -12,7 +12,7 @@ return array (
     ),
     'blocks' => array (
         array (
-            'name' => '1block',
+            'name' => 'getSingleRecipeCollection',
             'description' => 'description',
             'args' => array (
                 array (
@@ -76,7 +76,7 @@ return array (
             ),
         ),
         array (
-            'name' => '2block',
+            'name' => 'getRecipeCollectionMetadata',
             'description' => 'description',
             'args' => array (
                 array (
@@ -116,7 +116,7 @@ return array (
             ),
         ),
         array (
-            'name' => '3block',
+            'name' => 'getRecipeCollections',
             'description' => 'description',
             'args' => array (
                 array (
@@ -156,7 +156,7 @@ return array (
             ),
         ),
         array (
-            'name' => '4block',
+            'name' => 'getFoodGlossaryArticleByTerm',
             'description' => 'description',
             'args' => array (
                 array (
@@ -196,7 +196,7 @@ return array (
             ),
         ),
         array (
-            'name' => '5block',
+            'name' => 'getFoodGlossaryArticle',
             'description' => 'description',
             'args' => array (
                 array (
@@ -236,7 +236,7 @@ return array (
             ),
         ),
         array (
-            'name' => '6block',
+            'name' => 'deleteItemsFromGroceryList',
             'description' => 'description',
             'args' => array (
                 array (
@@ -270,7 +270,7 @@ return array (
             ),
         ),
         array (
-            'name' => '7block',
+            'name' => 'getMyGroceryList',
             'description' => 'description',
             'args' => array (
                 array (
@@ -304,7 +304,7 @@ return array (
             ),
         ),
         array (
-            'name' => '8block',
+            'name' => 'departmentalizeItemsInGroceryList',
             'description' => 'description',
             'args' => array (
                 array (
@@ -344,7 +344,7 @@ return array (
             ),
         ),
         array (
-            'name' => '9block',
+            'name' => 'addSingleItemToGroceryList',
             'description' => 'description',
             'args' => array (
                 array (
@@ -384,7 +384,7 @@ return array (
             ),
         ),
         array (
-            'name' => '10block',
+            'name' => 'deleteItemFromGroceryList',
             'description' => 'description',
             'args' => array (
                 array (
@@ -424,7 +424,7 @@ return array (
             ),
         ),
         array (
-            'name' => '11block',
+            'name' => 'updateGroceryItem',
             'description' => 'description',
             'args' => array (
                 array (
@@ -470,7 +470,7 @@ return array (
             ),
         ),
         array (
-            'name' => '12block',
+            'name' => 'addRecipeToGroceryList',
             'description' => 'description',
             'args' => array (
                 array (
@@ -510,7 +510,7 @@ return array (
             ),
         ),
         array (
-            'name' => '13block',
+            'name' => 'synchronizeGroceryList',
             'description' => 'description',
             'args' => array (
                 array (
@@ -550,7 +550,7 @@ return array (
             ),
         ),
         array (
-            'name' => '14block',
+            'name' => 'createRecipe',
             'description' => 'description',
             'args' => array (
                 array (
@@ -590,7 +590,7 @@ return array (
             ),
         ),
         array (
-            'name' => '15block',
+            'name' => 'updateRecipe',
             'description' => 'description',
             'args' => array (
                 array (
@@ -630,7 +630,7 @@ return array (
             ),
         ),
         array (
-            'name' => '16block',
+            'name' => 'getRecipeAutocomplete',
             'description' => 'description',
             'args' => array (
                 array (
@@ -676,7 +676,7 @@ return array (
             ),
         ),
         array (
-            'name' => '17block',
+            'name' => 'getRecipeCategories',
             'description' => 'description',
             'args' => array (
                 array (
@@ -710,7 +710,7 @@ return array (
             ),
         ),
         array (
-            'name' => '18block',
+            'name' => 'deleteMyReviewReply',
             'description' => 'description',
             'args' => array (
                 array (
@@ -750,7 +750,7 @@ return array (
             ),
         ),
         array (
-            'name' => '19block',
+            'name' => 'updateMyReviewReply',
             'description' => 'description',
             'args' => array (
                 array (
@@ -796,7 +796,7 @@ return array (
             ),
         ),
         array (
-            'name' => '20block',
+            'name' => 'getSingleReview',
             'description' => 'description',
             'args' => array (
                 array (
@@ -836,7 +836,7 @@ return array (
             ),
         ),
         array (
-            'name' => '21block',
+            'name' => 'updateReview',
             'description' => 'description',
             'args' => array (
                 array (
@@ -882,7 +882,7 @@ return array (
             ),
         ),
         array (
-            'name' => '22block',
+            'name' => 'getReviewReplies',
             'description' => 'description',
             'args' => array (
                 array (
@@ -934,7 +934,7 @@ return array (
             ),
         ),
         array (
-            'name' => '23block',
+            'name' => 'addReplyToReview',
             'description' => 'description',
             'args' => array (
                 array (
@@ -980,7 +980,7 @@ return array (
             ),
         ),
         array (
-            'name' => '24block',
+            'name' => 'createRecipeScan',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1038,7 +1038,7 @@ return array (
             ),
         ),
         array (
-            'name' => '25block',
+            'name' => 'deleteMySingleRecipe',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1078,7 +1078,7 @@ return array (
             ),
         ),
         array (
-            'name' => '26block',
+            'name' => 'getMySingleRecipe',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1124,7 +1124,7 @@ return array (
             ),
         ),
         array (
-            'name' => '27block',
+            'name' => 'createRecipeFeedback',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1170,7 +1170,7 @@ return array (
             ),
         ),
         array (
-            'name' => '28block',
+            'name' => 'addRecipeImage',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1228,47 +1228,7 @@ return array (
             ),
         ),
         array (
-            'name' => '29block',
-            'description' => 'description',
-            'args' => array (
-                array (
-                    'name' => 'apiKey',
-                    'type' => 'credentials',
-                    'info' => 'Your API Key',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'credentialsUsername',
-                    'type' => 'credentials',
-                    'info' => 'Username of user.',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'credentialsPassword',
-                    'type' => 'credentials',
-                    'info' => 'Password of user.',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'recipeId',
-                    'type' => 'Number',
-                    'info' => 'Recipe ID (required)',
-                    'required' => true,
-                ),
-            ),
-            'callbacks' => array (
-                array (
-                    'name' => 'error',
-                    'info' => 'Error',
-                ),
-                array (
-                    'name' => 'success',
-                    'info' => 'Success',
-                ),
-            ),
-        ),
-        array (
-            'name' => '30block',
+            'name' => 'createRecipeNote',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1314,7 +1274,7 @@ return array (
             ),
         ),
         array (
-            'name' => '31block',
+            'name' => 'deleteRecipeNote',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1360,7 +1320,7 @@ return array (
             ),
         ),
         array (
-            'name' => '32block',
+            'name' => 'getMySingleRecipeNote',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1406,7 +1366,7 @@ return array (
             ),
         ),
         array (
-            'name' => '33block',
+            'name' => 'updateRecipeNote',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1458,7 +1418,7 @@ return array (
             ),
         ),
         array (
-            'name' => '34block',
+            'name' => 'getRecipeNotes',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1510,7 +1470,7 @@ return array (
             ),
         ),
         array (
-            'name' => '35block',
+            'name' => 'getRecipePhotos',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1562,7 +1522,7 @@ return array (
             ),
         ),
         array (
-            'name' => '36block',
+            'name' => 'getRelatedRecipes',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1614,7 +1574,7 @@ return array (
             ),
         ),
         array (
-            'name' => '37block',
+            'name' => 'getMyRecipeReview',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1654,7 +1614,7 @@ return array (
             ),
         ),
         array (
-            'name' => '38block',
+            'name' => 'createReview',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1700,151 +1660,7 @@ return array (
             ),
         ),
         array (
-            'name' => '39block',
-            'description' => 'description',
-            'args' => array (
-                array (
-                    'name' => 'apiKey',
-                    'type' => 'credentials',
-                    'info' => 'Your API Key',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'credentialsUsername',
-                    'type' => 'credentials',
-                    'info' => 'Username of user.',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'credentialsPassword',
-                    'type' => 'credentials',
-                    'info' => 'Password of user.',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'reviewId',
-                    'type' => 'String',
-                    'info' => '',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'recipeId',
-                    'type' => 'String',
-                    'info' => 'description',
-                    'required' => true,
-                ),
-            ),
-            'callbacks' => array (
-                array (
-                    'name' => 'error',
-                    'info' => 'Error',
-                ),
-                array (
-                    'name' => 'success',
-                    'info' => 'Success',
-                ),
-            ),
-        ),
-        array (
-            'name' => '40block',
-            'description' => 'description',
-            'args' => array (
-                array (
-                    'name' => 'apiKey',
-                    'type' => 'credentials',
-                    'info' => 'Your API Key',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'credentialsUsername',
-                    'type' => 'credentials',
-                    'info' => 'Username of user.',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'credentialsPassword',
-                    'type' => 'credentials',
-                    'info' => 'Password of user.',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'reviewId',
-                    'type' => 'Number',
-                    'info' => 'int',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'recipeId',
-                    'type' => 'Number',
-                    'info' => 'int',
-                    'required' => true,
-                ),
-            ),
-            'callbacks' => array (
-                array (
-                    'name' => 'error',
-                    'info' => 'Error',
-                ),
-                array (
-                    'name' => 'success',
-                    'info' => 'Success',
-                ),
-            ),
-        ),
-        array (
-            'name' => '41block',
-            'description' => 'description',
-            'args' => array (
-                array (
-                    'name' => 'apiKey',
-                    'type' => 'credentials',
-                    'info' => 'Your API Key',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'credentialsUsername',
-                    'type' => 'credentials',
-                    'info' => 'Username of user.',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'credentialsPassword',
-                    'type' => 'credentials',
-                    'info' => 'Password of user.',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'reviewId',
-                    'type' => 'Number',
-                    'info' => 'reviewId (int)',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'review',
-                    'type' => 'String',
-                    'info' => '',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'recipeId',
-                    'type' => 'Number',
-                    'info' => 'recipeId (int)',
-                    'required' => true,
-                ),
-            ),
-            'callbacks' => array (
-                array (
-                    'name' => 'error',
-                    'info' => 'Error',
-                ),
-                array (
-                    'name' => 'success',
-                    'info' => 'Success',
-                ),
-            ),
-        ),
-        array (
-            'name' => '42block',
+            'name' => 'getRecipeReviews',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1896,7 +1712,7 @@ return array (
             ),
         ),
         array (
-            'name' => '43block',
+            'name' => 'getRecipeScanImages',
             'description' => 'description',
             'args' => array (
                 array (
@@ -1936,7 +1752,7 @@ return array (
             ),
         ),
         array (
-            'name' => '44block',
+            'name' => 'searchRecipes',
             'description' => 'description',
             'args' => array (
                 array (
@@ -2162,7 +1978,7 @@ return array (
             ),
         ),
         array (
-            'name' => '45block',
+            'name' => 'getRandomRecipe',
             'description' => 'description',
             'args' => array (
                 array (
@@ -2196,7 +2012,7 @@ return array (
             ),
         ),
         array (
-            'name' => '46block',
+            'name' => 'getRecipeRaves',
             'description' => 'description',
             'args' => array (
                 array (
@@ -2242,7 +2058,7 @@ return array (
             ),
         ),
         array (
-            'name' => '47block',
+            'name' => 'getUserRecentlyViewedRecipes',
             'description' => 'description',
             'args' => array (
                 array (
@@ -2289,7 +2105,7 @@ return array (
         ),
     ),
     'custom' => array (
-        '1block' => array (
+        'getSingleRecipeCollection' => array (
             'dictionary' => array (
                 'id' => 'id',
                 'rpp' => 'rpp',
@@ -2300,68 +2116,68 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/collection/{{id}}',
             'method' => 'GET',
         ),
-        '2block' => array (
+        'getRecipeCollectionMetadata' => array (
             'dictionary' => array (
                 'id' => 'id',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/collection/{{id}}/meta',
             'method' => 'GET',
         ),
-        '3block' => array (
+        'getRecipeCollections' => array (
             'dictionary' => array (
                 'test' => 'test',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/collections',
             'method' => 'GET',
         ),
-        '4block' => array (
+        'getFoodGlossaryArticleByTerm' => array (
             'dictionary' => array (
                 'term' => 'term',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/glossary/byterm/{{term}}',
             'method' => 'GET',
         ),
-        '5block' => array (
+        'getFoodGlossaryArticle' => array (
             'dictionary' => array (
                 'id' => 'id',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/glossary/{{id}}',
             'method' => 'GET',
         ),
-        '6block' => array (
+        'deleteItemsFromGroceryList' => array (
             'dictionary' => array (
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist',
             'method' => 'DELETE',
         ),
-        '7block' => array (
+        'getMyGroceryList' => array (
             'dictionary' => array (
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist',
             'method' => 'GET',
         ),
-        '8block' => array (
+        'departmentalizeItemsInGroceryList' => array (
             'dictionary' => array (
                 'model' => 'model',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/department',
             'method' => 'POST',
         ),
-        '9block' => array (
+        'addSingleItemToGroceryList' => array (
             'dictionary' => array (
                 'newItem' => 'newItem',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/item',
             'method' => 'POST',
         ),
-        '10block' => array (
+        'deleteItemFromGroceryList' => array (
             'dictionary' => array (
                 'guid' => 'guid',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/item/{{guid}}',
             'method' => 'DELETE',
         ),
-        '11block' => array (
+        'updateGroceryItem' => array (
             'dictionary' => array (
                 'req' => 'req',
                 'guid' => 'guid',
@@ -2369,35 +2185,35 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/item/{{guid}}',
             'method' => 'PUT',
         ),
-        '12block' => array (
+        'addRecipeToGroceryList' => array (
             'dictionary' => array (
                 'data' => 'data',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/recipe',
             'method' => 'POST',
         ),
-        '13block' => array (
+        'synchronizeGroceryList' => array (
             'dictionary' => array (
                 'req' => 'req',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/sync',
             'method' => 'POST',
         ),
-        '14block' => array (
+        'createRecipe' => array (
             'dictionary' => array (
                 'recipe' => 'recipe',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe',
             'method' => 'POST',
         ),
-        '15block' => array (
+        'updateRecipe' => array (
             'dictionary' => array (
                 'recipe' => 'recipe',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe',
             'method' => 'PUT',
         ),
-        '16block' => array (
+        'getRecipeAutocomplete' => array (
             'dictionary' => array (
                 'query' => 'query',
                 'limit' => 'limit',
@@ -2405,20 +2221,20 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/autocomplete',
             'method' => 'GET',
         ),
-        '17block' => array (
+        'getRecipeCategories' => array (
             'dictionary' => array (
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/categories',
             'method' => 'GET',
         ),
-        '18block' => array (
+        'deleteMyReviewReply' => array (
             'dictionary' => array (
                 'replyId' => 'replyId',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/review/replies/{{replyId}}',
             'method' => 'DELETE',
         ),
-        '19block' => array (
+        'updateMyReviewReply' => array (
             'dictionary' => array (
                 'replyId' => 'replyId',
                 'data' => 'data',
@@ -2426,14 +2242,14 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/review/replies/{{replyId}}',
             'method' => 'PUT',
         ),
-        '20block' => array (
+        'getSingleReview' => array (
             'dictionary' => array (
                 'reviewId' => 'reviewId',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/review/{{reviewId}}',
             'method' => 'GET',
         ),
-        '21block' => array (
+        'updateReview' => array (
             'dictionary' => array (
                 'reviewId' => 'reviewId',
                 'review' => 'review',
@@ -2441,7 +2257,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/review/{{reviewId}}',
             'method' => 'PUT',
         ),
-        '22block' => array (
+        'getReviewReplies' => array (
             'dictionary' => array (
                 'reviewId' => 'reviewId',
                 'pg' => 'pg',
@@ -2450,7 +2266,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/review/{{reviewId}}/replies',
             'method' => 'GET',
         ),
-        '23block' => array (
+        'addReplyToReview' => array (
             'dictionary' => array (
                 'reviewId' => 'reviewId',
                 'data' => 'data',
@@ -2458,7 +2274,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/review/{{reviewId}}/replies',
             'method' => 'POST',
         ),
-        '24block' => array (
+        'createRecipeScan' => array (
             'dictionary' => array (
                 'test' => 'test',
                 'devicetype' => 'devicetype',
@@ -2468,14 +2284,14 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/scan',
             'method' => 'POST',
         ),
-        '25block' => array (
+        'deleteMySingleRecipe' => array (
             'dictionary' => array (
                 'id' => 'id',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{id}}',
             'method' => 'DELETE',
         ),
-        '26block' => array (
+        'getMySingleRecipe' => array (
             'dictionary' => array (
                 'id' => 'id',
                 'prefetch' => 'prefetch',
@@ -2483,7 +2299,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{id}}',
             'method' => 'GET',
         ),
-        '27block' => array (
+        'createRecipeFeedback' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
                 'data' => 'data',
@@ -2491,7 +2307,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/feedback',
             'method' => 'POST',
         ),
-        '28block' => array (
+        'addRecipeImage' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
                 'caption' => 'caption',
@@ -2501,14 +2317,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/image',
             'method' => 'POST',
         ),
-        '29block' => array (
-            'dictionary' => array (
-                'recipeId' => 'recipeId',
-            ),
-            'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/images',
-            'method' => 'GET',
-        ),
-        '30block' => array (
+        'createRecipeNote' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
                 'note' => 'note',
@@ -2516,7 +2325,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/note',
             'method' => 'POST',
         ),
-        '31block' => array (
+        'deleteRecipeNote' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
                 'noteId' => 'noteId',
@@ -2524,7 +2333,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/note/{{noteId}}',
             'method' => 'DELETE',
         ),
-        '32block' => array (
+        'getMySingleRecipeNote' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
                 'noteId' => 'noteId',
@@ -2532,7 +2341,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/note/{{noteId}}',
             'method' => 'GET',
         ),
-        '33block' => array (
+        'updateRecipeNote' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
                 'noteId' => 'noteId',
@@ -2541,7 +2350,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/note/{{noteId}}',
             'method' => 'PUT',
         ),
-        '34block' => array (
+        'getRecipeNotes' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
                 'pg' => 'pg',
@@ -2550,7 +2359,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/notes',
             'method' => 'GET',
         ),
-        '35block' => array (
+        'getRecipePhotos' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
                 'pg' => 'pg',
@@ -2559,7 +2368,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/photos',
             'method' => 'GET',
         ),
-        '36block' => array (
+        'getRelatedRecipes' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
                 'pg' => 'pg',
@@ -2568,14 +2377,14 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/related',
             'method' => 'GET',
         ),
-        '37block' => array (
+        'getMyRecipeReview' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/review',
             'method' => 'GET',
         ),
-        '38block' => array (
+        'createReview' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
                 'data' => 'data',
@@ -2583,32 +2392,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/review',
             'method' => 'POST',
         ),
-        '39block' => array (
-            'dictionary' => array (
-                'reviewId' => 'reviewId',
-                'recipeId' => 'recipeId',
-            ),
-            'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/review/{{reviewId}}',
-            'method' => 'DELETE',
-        ),
-        '40block' => array (
-            'dictionary' => array (
-                'reviewId' => 'reviewId',
-                'recipeId' => 'recipeId',
-            ),
-            'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/review/{{reviewId}}',
-            'method' => 'GET',
-        ),
-        '41block' => array (
-            'dictionary' => array (
-                'reviewId' => 'reviewId',
-                'review' => 'review',
-                'recipeId' => 'recipeId',
-            ),
-            'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/review/{{reviewId}}',
-            'method' => 'PUT',
-        ),
-        '42block' => array (
+        'getRecipeReviews' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
                 'pg' => 'pg',
@@ -2617,14 +2401,14 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/reviews',
             'method' => 'GET',
         ),
-        '43block' => array (
+        'getRecipeScanImages' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/scans',
             'method' => 'GET',
         ),
-        '44block' => array (
+        'searchRecipes' => array (
             'dictionary' => array (
                 'any_kw' => 'any_kw',
                 'folder' => 'folder',
@@ -2662,13 +2446,13 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipes',
             'method' => 'GET',
         ),
-        '45block' => array (
+        'getRandomRecipe' => array (
             'dictionary' => array (
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipes/random',
             'method' => 'GET',
         ),
-        '46block' => array (
+        'getRecipeRaves' => array (
             'dictionary' => array (
                 'pg' => 'pg',
                 'rpp' => 'rpp',
@@ -2676,7 +2460,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipes/raves',
             'method' => 'GET',
         ),
-        '47block' => array (
+        'getUserRecentlyViewedRecipes' => array (
             'dictionary' => array (
                 'pg' => 'pg',
                 'rpp' => 'rpp',

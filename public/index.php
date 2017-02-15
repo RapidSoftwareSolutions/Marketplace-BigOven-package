@@ -16,6 +16,51 @@ if( strlen(trim($inPath)) > 0){
 define('APP_PATH', __DIR__);
 define('HTTP_HOST', $_SERVER['HTTP_HOST']);
 
+$methodsList[] = ["getSingleRecipeCollection", "GET", "/collection/{id}"];
+$methodsList[] = ["getRecipeCollectionMetadata", "GET", "/collection/{id}/meta"];
+$methodsList[] = ["getRecipeCollections", "GET", "/collections"];
+$methodsList[] = ["getFoodGlossaryArticle", "GET", "/glossary/{id}"];
+$methodsList[] = ["getFoodGlossaryArticleByTerm", "GET", "/glossary/byterm/{term}"];
+$methodsList[] = ["getRecipePhotos", "GET", "/recipe/{recipeId}/photos"];
+$methodsList[] = ["getRecipeScanImages", "GET", "/recipe/{recipeId}/scans"];
+$methodsList[] = ["addRecipeImage", "POST", "/recipe/{recipeId}/image"];
+$methodsList[] = ["deleteRecipeNote", "DELETE", "/recipe/{recipeId}/note/{noteId}"];
+$methodsList[] = ["getMySingleRecipeNote", "GET", "/recipe/{recipeId}/note/{noteId}"];
+$methodsList[] = ["updateRecipeNote", "PUT", "/recipe/{recipeId}/note/{noteId}"];
+$methodsList[] = ["getRecipeNotes", "GET", "/recipe/{recipeId}/notes"];
+$methodsList[] = ["createRecipeNote", "POST", "/recipe/{recipeId}/note"];
+$methodsList[] = ["deleteMySingleRecipe", "DELETE", "/recipe/{id}"];
+$methodsList[] = ["getMySingleRecipe", "GET", "/recipe/{id}"];
+$methodsList[] = ["getRelatedRecipes", "GET", "/recipe/{recipeId}/related"];
+$methodsList[] = ["createRecipeFeedback", "POST", "/recipe/{recipeId}/feedback"];
+$methodsList[] = ["getRandomRecipe", "GET", "/recipes/random"];
+$methodsList[] = ["searchRecipes", "GET", "/recipes"];
+$methodsList[] = ["getRecipeCategories", "GET", "/recipe/categories"];
+$methodsList[] = ["getRecipeAutocomplete", "GET", "/recipe/autocomplete"];
+$methodsList[] = ["createRecipeScan", "POST", "/recipe/scan"];
+$methodsList[] = ["createRecipe", "POST", "/recipe"];
+$methodsList[] = ["updateRecipe", "PUT", "/recipe"];
+$methodsList[] = ["getUserRecentlyViewedRecipes", "GET", "/recipes/recentviews"];
+$methodsList[] = ["getRecipeRaves", "GET", "/recipes/raves"];
+$methodsList[] = ["getSingleReview", "GET", "/recipe/review/{reviewId}"];
+$methodsList[] = ["updateReview", "PUT", "/recipe/review/{reviewId}"];
+$methodsList[] = ["getMyRecipeReview", "GET", "/recipe/{recipeId}/review"];
+$methodsList[] = ["createReview", "POST", "/recipe/{recipeId}/review"];
+$methodsList[] = ["deleteRecipeReview", "DELETE", "/recipe/review/{reviewId}"];
+$methodsList[] = ["getRecipeReviews", "GET", "/recipe/{recipeId}/reviews"];
+$methodsList[] = ["getReviewReplies", "GET", "/recipe/review/{reviewId}/replies"];
+$methodsList[] = ["addReplyToReview", "POST", "/recipe/review/{reviewId}/replies"];
+$methodsList[] = ["deleteMyReviewReply", "DELETE", "/recipe/review/replies/{replyId}"];
+$methodsList[] = ["updateMyReviewReply", "PUT", "/recipe/review/replies/{replyId}"];
+$methodsList[] = ["deleteItemsFromGroceryList", "DELETE", "/grocerylist"];
+$methodsList[] = ["getMyGroceryList", "GET", "/grocerylist"];
+$methodsList[] = ["addRecipeToGroceryList", "POST", "/grocerylist/recipe"];
+$methodsList[] = ["synchronizeGroceryList", "POST", "/grocerylist/sync"];
+$methodsList[] = ["addSingleItemToGroceryList", "POST", "/grocerylist/item"];
+$methodsList[] = ["deleteItemFromGroceryList", "DELETE", "/grocerylist/item/{guid}"];
+$methodsList[] = ["updateGroceryItem", "PUT", "/grocerylist/item/{guid}"];
+$methodsList[] = ["departmentalizeItemsInGroceryList", "POST", "/grocerylist/department"];
+
 $allType = [];
 
 $swagger = file_get_contents(dirname(APP_PATH) . '/test/swagger.json');
@@ -27,6 +72,17 @@ $counter = 1;
 foreach($swagger['paths'] as $vendorUrl => $methods){
     foreach($methods as $vendorMethod => $blockInfo) {
         $tmpBlockName = $counter . 'block';
+        foreach($methodsList as $oneMethod){
+            if($oneMethod[2] == $vendorUrl&&$oneMethod[1] == strtoupper(trim($vendorMethod))){
+                $tmpBlockName = $oneMethod[0];
+            }
+        }
+        if($tmpBlockName != $counter . 'block'){
+            echo $tmpBlockName . '<br>';
+        }else{
+            continue;
+        }
+
         $newBlock['name'] = $tmpBlockName;
         $newBlock['description'] = 'description';
 
@@ -78,7 +134,7 @@ foreach($swagger['paths'] as $vendorUrl => $methods){
                         return strtoupper(trim($matches[0], '_'));
                     }, $optionName);
                 }else{
-                    echo $optionName . '<br>';
+                    //echo $optionName . '<br>';
                 }
                 $customBlocks[$tmpBlockName]['dictionary'][$optionName] = $oldDictionary;
 
@@ -104,8 +160,8 @@ foreach($swagger['paths'] as $vendorUrl => $methods){
         $counter++;
     }
 }
-var_dump($allType);
-var_dump(array_unique($allType));
+//var_dump($allType);
+//var_dump(array_unique($allType));
 echo '<hr><pre>';
 //echo var_export($newBlocks, true);
 echo preg_replace('/=>\s*\n\s+array \(/', '=> array (', preg_replace('/\n\s*[0-9]+\s=>.*\n/', "\n", var_export($newBlocks, true)));
