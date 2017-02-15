@@ -1,0 +1,45 @@
+{
+  "package": "BigOven",
+  "tagline": "The best recipe organizer, grocery list and menu app for home cooks.",
+  "description": "With BigOven, you can take your recipes anywhere, make grocery lists and easily share your favorite creations with your friends, family or even your future self when you need them.",
+  "image": "https://logo.clearbit.com/bigoven.com?s=128",
+  "repo": "https://github.com/RapidSoftwareSolutions/Marketplace-BigOven-package",
+  "keywords": [
+    "API",
+    "recipe",
+    "cooking",
+    "BigOven"
+  ],
+  "accounts": {
+    "domain": "bigoven.com",
+    "credentials": [
+      "apiKey",
+      "username",
+      "password"
+    ]
+  },
+  "blocks": [
+    {
+      "name": "simplifyExpression",
+      "description": "Simplify expression",
+      "args": [
+        {
+          "name": "expression",
+          "type": "String",
+          "info": "Url-encoded math expression on which you want to operate. Expression examlpe: 2^2+2(2), result: 8",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    }
+  ]
+}
