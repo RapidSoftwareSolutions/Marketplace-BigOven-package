@@ -366,9 +366,33 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'newItem',
+                    'name' => 'newItemName',
                     'type' => 'String',
-                    'info' => 'One of: name, quantity, unit, notes, department.',
+                    'info' => 'newItemName',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'newItemQuantity',
+                    'type' => 'String',
+                    'info' => 'newItemQuantity',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'newItemUnit',
+                    'type' => 'String',
+                    'info' => 'newItemUnit',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'newItemNotes',
+                    'type' => 'String',
+                    'info' => 'newItemNotes',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'newItemDepartment',
+                    'type' => 'String',
+                    'info' => 'newItemDepartment',
                     'required' => true,
                 ),
             ),
@@ -446,16 +470,40 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'requisite',
-                    'type' => 'JSON',
-                    'info' => 'Grocery item requisite.',
-                    'required' => true,
-                ),
-                array (
                     'name' => 'GUID',
                     'type' => 'String',
                     'info' => 'Grocery list item id (GUID).',
                     'required' => true,
+                ),
+                array (
+                    'name' => 'requisiteName',
+                    'type' => 'String',
+                    'info' => 'Grocery item requisite name.',
+                    'required' => false,
+                ),
+                array (
+                    'name' => 'requisiteQuantity',
+                    'type' => 'String',
+                    'info' => 'Grocery item requisite quantity.',
+                    'required' => false,
+                ),
+                array (
+                    'name' => 'requisiteUnit',
+                    'type' => 'String',
+                    'info' => 'Grocery item requisite unit.',
+                    'required' => false,
+                ),
+                array (
+                    'name' => 'requisiteNotes',
+                    'type' => 'String',
+                    'info' => 'Grocery item requisite notes.',
+                    'required' => false,
+                ),
+                array (
+                    'name' => 'requisiteDepartment',
+                    'type' => 'String',
+                    'info' => 'Grocery item requisite department.',
+                    'required' => false,
                 ),
             ),
             'callbacks' => array (
@@ -492,9 +540,21 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'data',
+                    'name' => 'recipeId',
                     'type' => 'String',
-                    'info' => 'In the request data, pass in recipeId, scale (scale=1.0 says to keep the recipe the same size as originally posted), markAsPending (true/false) to indicate that the lines in the recipe should be marked in a "pending" (unconfirmed by user) state.',
+                    'info' => 'The recipe identifier.',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'scale',
+                    'type' => 'String',
+                    'info' => 'Scale=1.0 says to keep the recipe the same size as originally posted.',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'markAsPending',
+                    'type' => 'Boolean',
+                    'info' => 'Indicate that the lines in the recipe should be marked in a "pending" (unconfirmed by user) state.',
                     'required' => true,
                 ),
             ),
@@ -532,10 +592,22 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'requisite',
-                    'type' => 'String',
-                    'info' => 'Grocery list requisite.',
+                    'name' => 'requisiteItems',
+                    'type' => 'Array',
+                    'info' => 'Grocery list items.',
                     'required' => true,
+                ),
+                array (
+                    'name' => 'requisiteRecipes',
+                    'type' => 'Array',
+                    'info' => 'Grocery list recipes.',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'since',
+                    'type' => 'String',
+                    'info' => 'Grocery since.',
+                    'required' => false,
                 ),
             ),
             'callbacks' => array (
@@ -549,6 +621,7 @@ return array (
                 ),
             ),
         ),
+/*
         array (
             'name' => 'createRecipe',
             'description' => 'Add a new recipe.',
@@ -629,6 +702,7 @@ return array (
                 ),
             ),
         ),
+*/
         array (
             'name' => 'getRecipeAutocomplete',
             'description' => 'Given a query, return recipe titles starting with query. Query must be at least 3 chars in length.',
@@ -864,10 +938,34 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'review',
+                    'name' => 'reviewStarRating',
                     'type' => 'String',
-                    'info' => 'Review requisite.',
-                    'required' => true,
+                    'info' => 'Review star rating.',
+                    'required' => false,
+                ),
+                array (
+                    'name' => 'reviewMakeAgain',
+                    'type' => 'String',
+                    'info' => 'Review make again.',
+                    'required' => false,
+                ),
+                array (
+                    'name' => 'reviewComment',
+                    'type' => 'String',
+                    'info' => 'Review comment.',
+                    'required' => false,
+                ),
+                array (
+                    'name' => 'reviewActiveMinutes',
+                    'type' => 'String',
+                    'info' => 'Review active minutes.',
+                    'required' => false,
+                ),
+                array (
+                    'name' => 'reviewTotalMinutes',
+                    'type' => 'String',
+                    'info' => 'Review total minutes.',
+                    'required' => false,
                 ),
             ),
             'callbacks' => array (
@@ -1235,7 +1333,7 @@ return array (
         ),
         array (
             'name' => 'createRecipeNote',
-            'description' => 'HTTP POST a new note into the system.',
+            'description' => 'Create a new note into the system.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
@@ -1262,9 +1360,33 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'note',
+                    'name' => 'recipeNote',
                     'type' => 'String',
-                    'info' => 'The recipe note, with fields: Date (YYYY-MM-DD string), Notes (string), People (string), Variations (string), RecipeID (int?).',
+                    'info' => 'The recipe note.',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'recipeNotePeople',
+                    'type' => 'String',
+                    'info' => 'Recipe note people.',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'recipeNoteVariations',
+                    'type' => 'String',
+                    'info' => 'Recipe note variations.',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'recipeNoteUserID',
+                    'type' => 'Number',
+                    'info' => 'Recipe note UserID.',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'recipeNoteGUID',
+                    'type' => 'String',
+                    'info' => 'Recipe note grocery list item id.',
                     'required' => true,
                 ),
             ),
@@ -1373,7 +1495,7 @@ return array (
         ),
         array (
             'name' => 'updateRecipeNote',
-            'description' => 'HTTP PUT (update) a Recipe note (RecipeNote).',
+            'description' => 'Update a Recipe note (RecipeNote).',
             'args' => array (
                 array (
                     'name' => 'apiKey',
@@ -1406,10 +1528,34 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'recipeNote',
+                    'name' => 'recipeNoteNotes',
                     'type' => 'String',
                     'info' => 'Recipe note data.',
-                    'required' => true,
+                    'required' => false,
+                ),
+                array (
+                    'name' => 'recipeNotePeople',
+                    'type' => 'String',
+                    'info' => 'Recipe note people.',
+                    'required' => false,
+                ),
+                array (
+                    'name' => 'recipeNoteVariations',
+                    'type' => 'String',
+                    'info' => 'Recipe note variations.',
+                    'required' => false,
+                ),
+                array (
+                    'name' => 'recipeNoteUserID',
+                    'type' => 'String',
+                    'info' => 'Recipe note UserID.',
+                    'required' => false,
+                ),
+                array (
+                    'name' => 'recipeNoteGUID',
+                    'type' => 'String',
+                    'info' => 'Recipe note grocery list item id.',
+                    'required' => false,
                 ),
             ),
             'callbacks' => array (
@@ -1636,9 +1782,33 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'data',
+                    'name' => 'Comment',
                     'type' => 'String',
                     'info' => 'Review data.',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'StarRating',
+                    'type' => 'String',
+                    'info' => 'Review Star rating.',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'MakeAgain',
+                    'type' => 'String',
+                    'info' => 'Review make again',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'ActiveMinutes',
+                    'type' => 'String',
+                    'info' => 'Review active minutes.',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'TotalMinutes',
+                    'type' => 'String',
+                    'info' => 'Review total minutes.',
                     'required' => true,
                 ),
             ),
@@ -2201,8 +2371,8 @@ return array (
         ),
         'synchronizeGroceryList' => array (
             'dictionary' => array (
-                'requisiteListItems' => 'req_list_Items',
-                'requisiteRecipes' => 'req_Recipes',
+                'requisiteItems' => 'req_list_Items',
+                'requisiteRecipes' => 'req_list_Recipes',
                 'since' => 'since',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/sync',
@@ -2337,7 +2507,7 @@ return array (
         'createRecipeNote' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId', // -> recipeNote_RecipeID
-                'note' => 'note', // -> recipeNote_Notes
+                'recipeNote' => 'recipeNote_Notes',
                 'recipeNotePeople' => 'recipeNote_People',
                 'recipeNoteVariations' => 'recipeNote_Variations',
                 'recipeNoteUserID' => 'recipeNote_UserID',
