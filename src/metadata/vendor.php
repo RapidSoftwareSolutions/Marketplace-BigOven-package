@@ -13,12 +13,12 @@ return array (
     'blocks' => array (
         array (
             'name' => 'getSingleRecipeCollection',
-            'description' => 'description',
+            'description' => 'Gets a recipe collection. A recipe collection is a curated set of recipes.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -34,33 +34,33 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'id',
+                    'name' => 'collectionId',
                     'type' => 'Number',
-                    'info' => 'the collection identifier',
+                    'info' => 'The collection identifier.',
                     'required' => true,
                 ),
                 array (
-                    'name' => 'rpp',
+                    'name' => 'resultsPerPage',
                     'type' => 'Number',
-                    'info' => 'results per page',
+                    'info' => 'Results per page (int).',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'pg',
+                    'name' => 'pageNumber',
                     'type' => 'Number',
-                    'info' => 'page number (starting with 1)',
+                    'info' => 'The page (int), starting with 1.',
                     'required' => false,
                 ),
                 array (
                     'name' => 'test',
                     'type' => 'Boolean',
-                    'info' => 'description',
+                    'info' => 'Test (Boolean).',
                     'required' => false,
                 ),
                 array (
                     'name' => 'sessionForLogging',
                     'type' => 'String',
-                    'info' => 'description',
+                    'info' => 'Session for logging.',
                     'required' => false,
                 ),
             ),
@@ -77,12 +77,12 @@ return array (
         ),
         array (
             'name' => 'getRecipeCollectionMetadata',
-            'description' => 'description',
+            'description' => 'Gets a recipe collection metadata. A recipe collection is a curated set of recipes.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -98,9 +98,9 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'id',
+                    'name' => 'collectionId',
                     'type' => 'Number',
-                    'info' => 'the collection identifier',
+                    'info' => 'The collection identifier.',
                     'required' => true,
                 ),
             ),
@@ -117,12 +117,12 @@ return array (
         ),
         array (
             'name' => 'getRecipeCollections',
-            'description' => 'description',
+            'description' => 'Get the list of current, seasonal recipe collections. From here, you can use the /collection/{id} endpoint to retrieve the recipes in those collections.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -140,7 +140,7 @@ return array (
                 array (
                     'name' => 'test',
                     'type' => 'String',
-                    'info' => 'description',
+                    'info' => 'Test.',
                     'required' => false,
                 ),
             ),
@@ -157,12 +157,12 @@ return array (
         ),
         array (
             'name' => 'getFoodGlossaryArticleByTerm',
-            'description' => 'description',
+            'description' => 'Get food glossary article by term (e.g., asparagus). This editorial is (c) BigOven and MUST carry attribution and a link back to the glossary entry on BigOven.com.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -180,7 +180,7 @@ return array (
                 array (
                     'name' => 'term',
                     'type' => 'String',
-                    'info' => 'Keyword used to look up article, e.g., asparagus',
+                    'info' => 'Keyword used to look up article, e.g., asparagus.',
                     'required' => true,
                 ),
             ),
@@ -197,12 +197,12 @@ return array (
         ),
         array (
             'name' => 'getFoodGlossaryArticle',
-            'description' => 'description',
+            'description' => 'Get food glossary article.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -218,9 +218,9 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'id',
+                    'name' => 'articleId',
                     'type' => 'Number',
-                    'info' => 'identifier of article to retrieve',
+                    'info' => 'Identifier of article to retrieve.',
                     'required' => true,
                 ),
             ),
@@ -237,12 +237,12 @@ return array (
         ),
         array (
             'name' => 'deleteItemsFromGroceryList',
-            'description' => 'description',
+            'description' => 'Delete all the items on a grocery list; faster operation than a sync with deleted items.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -271,12 +271,12 @@ return array (
         ),
         array (
             'name' => 'getMyGroceryList',
-            'description' => 'description',
+            'description' => 'Get the user\'s grocery list. User is determined by Basic Authentication.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -305,12 +305,12 @@ return array (
         ),
         array (
             'name' => 'departmentalizeItemsInGroceryList',
-            'description' => 'description',
+            'description' => 'Departmentalize a list of strings. Used for ad-hoc grocery list item addition.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -328,7 +328,7 @@ return array (
                 array (
                     'name' => 'model',
                     'type' => 'String',
-                    'info' => 'description',
+                    'info' => 'Items list.',
                     'required' => true,
                 ),
             ),
@@ -345,12 +345,12 @@ return array (
         ),
         array (
             'name' => 'addSingleItemToGroceryList',
-            'description' => 'description',
+            'description' => 'Add a single line item to the grocery list.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -368,7 +368,7 @@ return array (
                 array (
                     'name' => 'newItem',
                     'type' => 'String',
-                    'info' => 'name, quantity, unit, notes, department',
+                    'info' => 'One of: name, quantity, unit, notes, department.',
                     'required' => true,
                 ),
             ),
@@ -385,12 +385,12 @@ return array (
         ),
         array (
             'name' => 'deleteItemFromGroceryList',
-            'description' => 'description',
+            'description' => 'Will delete this item assuming you own it.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -406,9 +406,9 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'guid',
+                    'name' => 'GUID',
                     'type' => 'String',
-                    'info' => '',
+                    'info' => 'Grocery list item id (GUID).',
                     'required' => true,
                 ),
             ),
@@ -425,12 +425,12 @@ return array (
         ),
         array (
             'name' => 'updateGroceryItem',
-            'description' => 'description',
+            'description' => 'Update a grocery item by GUID',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -446,15 +446,15 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'req',
-                    'type' => 'String',
-                    'info' => '',
+                    'name' => 'requisite',
+                    'type' => 'JSON',
+                    'info' => 'Grocery item requisite.',
                     'required' => true,
                 ),
                 array (
-                    'name' => 'guid',
+                    'name' => 'GUID',
                     'type' => 'String',
-                    'info' => 'description',
+                    'info' => 'Grocery list item id (GUID).',
                     'required' => true,
                 ),
             ),
@@ -471,12 +471,12 @@ return array (
         ),
         array (
             'name' => 'addRecipeToGroceryList',
-            'description' => 'description',
+            'description' => 'Add a Recipe to the grocery list.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -494,7 +494,7 @@ return array (
                 array (
                     'name' => 'data',
                     'type' => 'String',
-                    'info' => 'description',
+                    'info' => 'In the request data, pass in recipeId, scale (scale=1.0 says to keep the recipe the same size as originally posted), markAsPending (true/false) to indicate that the lines in the recipe should be marked in a "pending" (unconfirmed by user) state.',
                     'required' => true,
                 ),
             ),
@@ -511,12 +511,12 @@ return array (
         ),
         array (
             'name' => 'synchronizeGroceryList',
-            'description' => 'description',
+            'description' => 'Synchronize the grocery list.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -532,9 +532,9 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'req',
+                    'name' => 'requisite',
                     'type' => 'String',
-                    'info' => 'description',
+                    'info' => 'Grocery list requisite.',
                     'required' => true,
                 ),
             ),
@@ -551,12 +551,12 @@ return array (
         ),
         array (
             'name' => 'createRecipe',
-            'description' => 'description',
+            'description' => 'Add a new recipe.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -574,7 +574,7 @@ return array (
                 array (
                     'name' => 'recipe',
                     'type' => 'String',
-                    'info' => '',
+                    'info' => 'Recipe requisites.',
                     'required' => true,
                 ),
             ),
@@ -591,12 +591,12 @@ return array (
         ),
         array (
             'name' => 'updateRecipe',
-            'description' => 'description',
+            'description' => 'Update a recipe.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -614,7 +614,7 @@ return array (
                 array (
                     'name' => 'recipe',
                     'type' => 'String',
-                    'info' => '',
+                    'info' => 'Recipe requisites.',
                     'required' => true,
                 ),
             ),
@@ -631,12 +631,12 @@ return array (
         ),
         array (
             'name' => 'getRecipeAutocomplete',
-            'description' => 'description',
+            'description' => 'Given a query, return recipe titles starting with query. Query must be at least 3 chars in length.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -654,13 +654,13 @@ return array (
                 array (
                     'name' => 'query',
                     'type' => 'String',
-                    'info' => '',
+                    'info' => 'Query for search.',
                     'required' => true,
                 ),
                 array (
                     'name' => 'limit',
                     'type' => 'Number',
-                    'info' => '',
+                    'info' => 'Search result limit.',
                     'required' => false,
                 ),
             ),
@@ -677,12 +677,12 @@ return array (
         ),
         array (
             'name' => 'getRecipeCategories',
-            'description' => 'description',
+            'description' => 'Get a list of recipe categories.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -711,12 +711,12 @@ return array (
         ),
         array (
             'name' => 'deleteMyReviewReply',
-            'description' => 'description',
+            'description' => 'DELETE a reply to a given review. Authenticated user must be the one who originally posted the reply.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -734,7 +734,7 @@ return array (
                 array (
                     'name' => 'replyId',
                     'type' => 'String',
-                    'info' => '',
+                    'info' => 'Review reply identifier.',
                     'required' => true,
                 ),
             ),
@@ -751,12 +751,12 @@ return array (
         ),
         array (
             'name' => 'updateMyReviewReply',
-            'description' => 'description',
+            'description' => 'Update (PUT) a reply to a given review. Authenticated user must be the original one that posted the reply.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -774,13 +774,13 @@ return array (
                 array (
                     'name' => 'replyId',
                     'type' => 'String',
-                    'info' => '',
+                    'info' => 'Review reply identifier.',
                     'required' => true,
                 ),
                 array (
                     'name' => 'data',
                     'type' => 'String',
-                    'info' => '',
+                    'info' => 'Review reply data.',
                     'required' => true,
                 ),
             ),
@@ -797,12 +797,12 @@ return array (
         ),
         array (
             'name' => 'getSingleReview',
-            'description' => 'description',
+            'description' => 'Get a given review by string-style ID. This will return a payload with FeaturedReply, ReplyCount. Recommended display is to list top-level reviews with one featured reply underneath. Currently, the FeaturedReply is the most recent one for that rating.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -820,7 +820,7 @@ return array (
                 array (
                     'name' => 'reviewId',
                     'type' => 'String',
-                    'info' => 'description',
+                    'info' => 'Review identifier.',
                     'required' => true,
                 ),
             ),
@@ -837,12 +837,12 @@ return array (
         ),
         array (
             'name' => 'updateReview',
-            'description' => 'description',
+            'description' => 'Update a given top-level review.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -860,13 +860,13 @@ return array (
                 array (
                     'name' => 'reviewId',
                     'type' => 'String',
-                    'info' => '',
+                    'info' => 'Review identifier.',
                     'required' => true,
                 ),
                 array (
                     'name' => 'review',
                     'type' => 'String',
-                    'info' => '',
+                    'info' => 'Review requisite.',
                     'required' => true,
                 ),
             ),
@@ -883,12 +883,12 @@ return array (
         ),
         array (
             'name' => 'getReviewReplies',
-            'description' => 'description',
+            'description' => 'Get a paged list of replies for a given review.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -906,19 +906,19 @@ return array (
                 array (
                     'name' => 'reviewId',
                     'type' => 'String',
-                    'info' => '',
+                    'info' => 'Review identifier.',
                     'required' => true,
                 ),
                 array (
-                    'name' => 'pg',
+                    'name' => 'pageNumber',
                     'type' => 'Number',
-                    'info' => 'the page (int), starting with 1',
+                    'info' => 'The page (int), starting with 1.',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'rpp',
+                    'name' => 'resultsPerPage',
                     'type' => 'Number',
-                    'info' => 'results per page (int)',
+                    'info' => 'Results per page (int).',
                     'required' => false,
                 ),
             ),
@@ -935,12 +935,12 @@ return array (
         ),
         array (
             'name' => 'addReplyToReview',
-            'description' => 'description',
+            'description' => 'POST a reply to a given review. The date will be set by server. Note that replies no longer have star ratings, only top-level reviews do.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -958,13 +958,13 @@ return array (
                 array (
                     'name' => 'reviewId',
                     'type' => 'String',
-                    'info' => '',
+                    'info' => 'Review identifier.',
                     'required' => true,
                 ),
                 array (
                     'name' => 'data',
                     'type' => 'String',
-                    'info' => '',
+                    'info' => 'Review data.',
                     'required' => true,
                 ),
             ),
@@ -981,12 +981,12 @@ return array (
         ),
         array (
             'name' => 'createRecipeScan',
-            'description' => 'description',
+            'description' => 'POST an image as a new RecipeScan.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1004,25 +1004,25 @@ return array (
                 array (
                     'name' => 'test',
                     'type' => 'Boolean',
-                    'info' => 'description',
+                    'info' => 'Test.',
                     'required' => false,
                 ),
                 array (
                     'name' => 'devicetype',
                     'type' => 'String',
-                    'info' => 'description',
+                    'info' => 'Scan device type.',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'lat',
+                    'name' => 'scanLatitude',
                     'type' => 'Number',
-                    'info' => 'description',
+                    'info' => 'Scan position latitude.',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'lng',
+                    'name' => 'scanLongitude',
                     'type' => 'Number',
-                    'info' => 'description',
+                    'info' => 'Scan position longitude.',
                     'required' => false,
                 ),
             ),
@@ -1039,12 +1039,12 @@ return array (
         ),
         array (
             'name' => 'deleteMySingleRecipe',
-            'description' => 'description',
+            'description' => 'Delete user single recipe.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1060,9 +1060,9 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'id',
+                    'name' => 'recipeId',
                     'type' => 'Number',
-                    'info' => 'description',
+                    'info' => 'Recipe identifier for delete.',
                     'required' => true,
                 ),
             ),
@@ -1079,12 +1079,12 @@ return array (
         ),
         array (
             'name' => 'getMySingleRecipe',
-            'description' => 'description',
+            'description' => 'Get user single recipe.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1100,15 +1100,15 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'id',
+                    'name' => 'RecipeId',
                     'type' => 'Number',
-                    'info' => 'the Recipe ID to retrieve',
+                    'info' => 'The Recipe ID to retrieve.',
                     'required' => true,
                 ),
                 array (
                     'name' => 'prefetch',
                     'type' => 'Boolean',
-                    'info' => 'description',
+                    'info' => 'Prefetch (Boolean).',
                     'required' => false,
                 ),
             ),
@@ -1125,12 +1125,12 @@ return array (
         ),
         array (
             'name' => 'createRecipeFeedback',
-            'description' => 'description',
+            'description' => 'Feedback on a Recipe -- for internal BigOven editors.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1148,13 +1148,13 @@ return array (
                 array (
                     'name' => 'recipeId',
                     'type' => 'Number',
-                    'info' => '',
+                    'info' => 'The recipe identifier (int).',
                     'required' => true,
                 ),
                 array (
                     'name' => 'data',
                     'type' => 'String',
-                    'info' => 'The payload for feedback, which includes the field "feedback"',
+                    'info' => 'The payload for feedback, which includes the field "feedback".',
                     'required' => true,
                 ),
             ),
@@ -1171,12 +1171,12 @@ return array (
         ),
         array (
             'name' => 'addRecipeImage',
-            'description' => 'description',
+            'description' => 'Add recipe image.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1194,25 +1194,31 @@ return array (
                 array (
                     'name' => 'recipeId',
                     'type' => 'Number',
-                    'info' => 'description',
+                    'info' => 'The recipe identifier (int).',
                     'required' => true,
+                ),
+                array (
+                    'name' => 'image',
+                    'type' => 'File',
+                    'info' => 'Image to adding.',
+                    'required' => false,
                 ),
                 array (
                     'name' => 'caption',
                     'type' => 'String',
-                    'info' => 'description',
+                    'info' => 'Image caption.',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'lat',
+                    'name' => 'imageLatitude',
                     'type' => 'Number',
-                    'info' => 'description',
+                    'info' => 'Image position latitude.',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'lng',
+                    'name' => 'imageLongitude',
                     'type' => 'Number',
-                    'info' => 'description',
+                    'info' => 'Image position longitude.',
                     'required' => false,
                 ),
             ),
@@ -1229,12 +1235,12 @@ return array (
         ),
         array (
             'name' => 'createRecipeNote',
-            'description' => 'description',
+            'description' => 'HTTP POST a new note into the system.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1252,13 +1258,13 @@ return array (
                 array (
                     'name' => 'recipeId',
                     'type' => 'Number',
-                    'info' => 'recipeId (int)',
+                    'info' => 'The recipe identifier (int).',
                     'required' => true,
                 ),
                 array (
                     'name' => 'note',
                     'type' => 'String',
-                    'info' => 'a recipe note, with fields: Date (YYYY-MM-DD string), Notes (string), People (string), Variations (string), RecipeID (int?)',
+                    'info' => 'The recipe note, with fields: Date (YYYY-MM-DD string), Notes (string), People (string), Variations (string), RecipeID (int?).',
                     'required' => true,
                 ),
             ),
@@ -1275,12 +1281,12 @@ return array (
         ),
         array (
             'name' => 'deleteRecipeNote',
-            'description' => 'description',
+            'description' => 'Delete recipe note.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1298,13 +1304,13 @@ return array (
                 array (
                     'name' => 'recipeId',
                     'type' => 'Number',
-                    'info' => 'recipeId (int)',
+                    'info' => 'The recipe identifier (int).',
                     'required' => true,
                 ),
                 array (
                     'name' => 'noteId',
                     'type' => 'Number',
-                    'info' => 'noteId (int)',
+                    'info' => 'The note identifier (int).',
                     'required' => true,
                 ),
             ),
@@ -1321,12 +1327,12 @@ return array (
         ),
         array (
             'name' => 'getMySingleRecipeNote',
-            'description' => 'description',
+            'description' => 'GET /recipe/{recipeId}/note/{noteId} ',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1344,13 +1350,13 @@ return array (
                 array (
                     'name' => 'recipeId',
                     'type' => 'Number',
-                    'info' => 'recipe identifier (integer)',
+                    'info' => 'The recipe identifier (int).',
                     'required' => true,
                 ),
                 array (
                     'name' => 'noteId',
                     'type' => 'Number',
-                    'info' => 'The note ID (note -- it\'s not the RecipeID)',
+                    'info' => 'The note ID (note -- it\'s not the RecipeID).',
                     'required' => true,
                 ),
             ),
@@ -1367,12 +1373,12 @@ return array (
         ),
         array (
             'name' => 'updateRecipeNote',
-            'description' => 'description',
+            'description' => 'HTTP PUT (update) a Recipe note (RecipeNote).',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1390,19 +1396,19 @@ return array (
                 array (
                     'name' => 'recipeId',
                     'type' => 'Number',
-                    'info' => 'description',
+                    'info' => 'The recipe identifier (int).',
                     'required' => true,
                 ),
                 array (
                     'name' => 'noteId',
                     'type' => 'Number',
-                    'info' => 'description',
+                    'info' => 'The note identifier (int).',
                     'required' => true,
                 ),
                 array (
                     'name' => 'recipeNote',
                     'type' => 'String',
-                    'info' => 'description',
+                    'info' => 'Recipe note data.',
                     'required' => true,
                 ),
             ),
@@ -1419,12 +1425,12 @@ return array (
         ),
         array (
             'name' => 'getRecipeNotes',
-            'description' => 'description',
+            'description' => 'Get recipe notes.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1442,19 +1448,13 @@ return array (
                 array (
                     'name' => 'recipeId',
                     'type' => 'Number',
-                    'info' => 'recipeId (int)',
+                    'info' => 'The recipe identifier (int).',
                     'required' => true,
                 ),
                 array (
-                    'name' => 'pg',
+                    'name' => 'pageNumber',
                     'type' => 'Number',
-                    'info' => 'page (int, starting from 1)',
-                    'required' => false,
-                ),
-                array (
-                    'name' => 'rpp',
-                    'type' => 'Number',
-                    'info' => 'recipeId',
+                    'info' => 'The page (int), starting with 1.',
                     'required' => false,
                 ),
             ),
@@ -1471,12 +1471,12 @@ return array (
         ),
         array (
             'name' => 'getRecipePhotos',
-            'description' => 'description',
+            'description' => 'Get all the photos for a recipe',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1494,19 +1494,13 @@ return array (
                 array (
                     'name' => 'recipeId',
                     'type' => 'Number',
-                    'info' => 'Recipe ID (required)',
+                    'info' => 'The recipe identifier (int).',
                     'required' => true,
                 ),
                 array (
-                    'name' => 'pg',
+                    'name' => 'pageNumber',
                     'type' => 'Number',
-                    'info' => 'description',
-                    'required' => false,
-                ),
-                array (
-                    'name' => 'rpp',
-                    'type' => 'Number',
-                    'info' => 'description',
+                    'info' => 'The page (int), starting with 1.',
                     'required' => false,
                 ),
             ),
@@ -1523,12 +1517,12 @@ return array (
         ),
         array (
             'name' => 'getRelatedRecipes',
-            'description' => 'description',
+            'description' => 'Get recipes related to the given recipeId.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1546,19 +1540,19 @@ return array (
                 array (
                     'name' => 'recipeId',
                     'type' => 'Number',
-                    'info' => 'description',
+                    'info' => 'The recipe identifier (int).',
                     'required' => true,
                 ),
                 array (
-                    'name' => 'pg',
+                    'name' => 'pageNumber',
                     'type' => 'Number',
-                    'info' => '',
+                    'info' => 'The page (int), starting with 1.',
                     'required' => true,
                 ),
                 array (
-                    'name' => 'rpp',
+                    'name' => 'resultsPerPage',
                     'type' => 'Number',
-                    'info' => '',
+                    'info' => 'Results per page (int).',
                     'required' => true,
                 ),
             ),
@@ -1575,12 +1569,12 @@ return array (
         ),
         array (
             'name' => 'getMyRecipeReview',
-            'description' => 'description',
+            'description' => 'Get *my* review for the recipe {recipeId}, where "me" is determined by standard authentication headers',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1598,7 +1592,7 @@ return array (
                 array (
                     'name' => 'recipeId',
                     'type' => 'Number',
-                    'info' => '',
+                    'info' => 'The recipe identifier (int).',
                     'required' => true,
                 ),
             ),
@@ -1615,12 +1609,12 @@ return array (
         ),
         array (
             'name' => 'createReview',
-            'description' => 'description',
+            'description' => 'Add a new review. Only one review can be provided per {userId, recipeId} pair. Otherwise your review will be updated.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1638,13 +1632,13 @@ return array (
                 array (
                     'name' => 'recipeId',
                     'type' => 'Number',
-                    'info' => '',
+                    'info' => 'The recipe identifier (int).',
                     'required' => true,
                 ),
                 array (
                     'name' => 'data',
                     'type' => 'String',
-                    'info' => '',
+                    'info' => 'Review data.',
                     'required' => true,
                 ),
             ),
@@ -1661,12 +1655,12 @@ return array (
         ),
         array (
             'name' => 'getRecipeReviews',
-            'description' => 'description',
+            'description' => 'Get paged list of reviews for a recipe. Each review will have at most one FeaturedReply, as well as a ReplyCount.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1684,19 +1678,19 @@ return array (
                 array (
                     'name' => 'recipeId',
                     'type' => 'Number',
-                    'info' => 'recipe id (int)',
+                    'info' => 'The recipe identifier (int).',
                     'required' => true,
                 ),
                 array (
-                    'name' => 'pg',
+                    'name' => 'pageNumber',
                     'type' => 'Number',
-                    'info' => 'the page (int), starting with 1',
+                    'info' => 'The page (int), starting with 1.',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'rpp',
+                    'name' => 'resultsPerPage',
                     'type' => 'Number',
-                    'info' => 'results per page (int)',
+                    'info' => 'Results per page (int).',
                     'required' => false,
                 ),
             ),
@@ -1713,12 +1707,12 @@ return array (
         ),
         array (
             'name' => 'getRecipeScanImages',
-            'description' => 'description',
+            'description' => 'Gets a list of RecipeScan images for the recipe. There will be at most 3 per recipe.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1736,7 +1730,7 @@ return array (
                 array (
                     'name' => 'recipeId',
                     'type' => 'Number',
-                    'info' => 'the recipe identifier (int)',
+                    'info' => 'The recipe identifier (int).',
                     'required' => true,
                 ),
             ),
@@ -1753,12 +1747,12 @@ return array (
         ),
         array (
             'name' => 'searchRecipes',
-            'description' => 'description',
+            'description' => 'Search for recipes. There are many parameters that you can apply.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -1774,195 +1768,195 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'any_kw',
+                    'name' => 'searchAnywhereByKeyword',
                     'type' => 'String',
-                    'info' => 'Search anywhere in the recipe for the keyword',
+                    'info' => 'Search anywhere in the recipe for the keyword.',
                     'required' => false,
                 ),
                 array (
                     'name' => 'folder',
                     'type' => 'String',
-                    'info' => 'Search in a specific folder name for the authenticated user',
+                    'info' => 'Search in a specific folder name for the authenticated user.',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'coll',
+                    'name' => 'collectionId',
                     'type' => 'Number',
-                    'info' => 'Limit to a collection ID number',
+                    'info' => 'Limit to a collection ID number.',
                     'required' => false,
                 ),
                 array (
                     'name' => 'filter',
                     'type' => 'String',
-                    'info' => 'optionally set to either "myrecipes", "try", "favorites","added" to filter to just the authenticated user\'s recipe set',
+                    'info' => 'Optionally set to either "myrecipes", "try", "favorites","added" to filter to just the authenticated user\'s recipe set.',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'title_kw',
+                    'name' => 'searchInTitleByKeyword',
                     'type' => 'String',
-                    'info' => 'Search just in the recipe title for the keyword',
+                    'info' => 'Search just in the recipe title for the keyword.',
                     'required' => false,
                 ),
                 array (
                     'name' => 'userId',
                     'type' => 'Number',
-                    'info' => 'Set the target userid to search their public recipes',
+                    'info' => 'Set the target userid to search their public recipes.',
                     'required' => false,
                 ),
                 array (
                     'name' => 'username',
                     'type' => 'String',
-                    'info' => 'Set the target username to search their public recipes',
+                    'info' => 'Set the target username to search their public recipes.',
                     'required' => false,
                 ),
                 array (
                     'name' => 'token',
                     'type' => 'String',
-                    'info' => 'description',
+                    'info' => 'Token.',
                     'required' => false,
                 ),
                 array (
                     'name' => 'photos',
                     'type' => 'Boolean',
-                    'info' => 'if set to true, limit search results to photos only',
+                    'info' => 'If set to true, limit search results to photos only.',
                     'required' => false,
                 ),
                 array (
                     'name' => 'boostmine',
                     'type' => 'Boolean',
-                    'info' => 'if set to true, boost my own recipes in my folders so they show up high in the list (at the expense of other sort orders)',
+                    'info' => 'If set to true, boost my own recipes in my folders so they show up high in the list (at the expense of other sort orders).',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'include_cat',
+                    'name' => 'includeCategoryId',
                     'type' => 'String',
-                    'info' => 'integer of the subcategory you\'d like to limit searches to (see the /recipe/categories endpoint for available id numbers). For instance, 58 is "Main Dish > Casseroles".',
+                    'info' => 'Integer of the subcategory you\'d like to limit searches to (see the /recipe/categories endpoint for available id numbers). For instance, 58 is "Main Dish > Casseroles".',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'exclude_cat',
+                    'name' => 'excludeCategoryId',
                     'type' => 'String',
-                    'info' => 'like include_cat, set this to an integer to exclude a specific category',
+                    'info' => 'Like include_cat, set this to an integer to exclude a specific category.',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'includePrimarycat',
+                    'name' => 'includePrimaryCat',
                     'type' => 'String',
-                    'info' => 'csv indicating up to three top-level categories -- valid values are [appetizers,bread,breakfast,desserts,drinks,maindish,salads,sidedish,soups,marinades,other]',
+                    'info' => 'Csv indicating up to three top-level categories -- valid values are [appetizers,bread,breakfast,desserts,drinks,maindish,salads,sidedish,soups,marinades,other].',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'include_ing',
+                    'name' => 'includeIngredients',
                     'type' => 'String',
-                    'info' => 'A CSV representing up to 3 ingredients to include, e.g., tomatoes,corn%20%starch,chicken',
+                    'info' => 'A CSV representing up to 3 ingredients to include, e.g., tomatoes,corn%20%starch,chicken.',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'exclude_ing',
+                    'name' => 'excludeIngredients',
                     'type' => 'String',
-                    'info' => 'A CSV representing up to 3 ingredients to exclude  (Powersearch-capable plan required)',
+                    'info' => 'A CSV representing up to 3 ingredients to exclude  (Powersearch-capable plan required).',
                     'required' => false,
                 ),
                 array (
                     'name' => 'cuisine',
                     'type' => 'String',
-                    'info' => 'Limit to a specific cuisine. Cooks can enter anything free-form, but the few dozen preconfigured values are Afghan,African,American,American-South,Asian,Australian,Brazilian,Cajun,Canadian,Caribbean,Chinese,Croatian,Cuban,Dessert,Eastern European,English,French,German,Greek,Hawaiian,Hungarian,India,Indian,Irish,Italian,Japanese,Jewish,Korean,Latin,Mediterranean,Mexican,Middle Eastern,Moroccan,Polish,Russian,Scandanavian,Seafood,Southern,Southwestern,Spanish,Tex-Mex,Thai,Vegan,Vegetarian,Vietnamese',
+                    'info' => 'Limit to a specific cuisine. Cooks can enter anything free-form, but the few dozen preconfigured values are Afghan,African,American,American-South,Asian,Australian,Brazilian,Cajun,Canadian,Caribbean,Chinese,Croatian,Cuban,Dessert,Eastern European,English,French,German,Greek,Hawaiian,Hungarian,India,Indian,Irish,Italian,Japanese,Jewish,Korean,Latin,Mediterranean,Mexican,Middle Eastern,Moroccan,Polish,Russian,Scandanavian,Seafood,Southern,Southwestern,Spanish,Tex-Mex,Thai,Vegan,Vegetarian,Vietnamese.',
                     'required' => false,
                 ),
                 array (
                     'name' => 'db',
                     'type' => 'String',
-                    'info' => 'description',
+                    'info' => 'DB.',
                     'required' => false,
                 ),
                 array (
                     'name' => 'userset',
                     'type' => 'String',
-                    'info' => 'If set to a given username, it\'ll force the search to filter to just that username',
+                    'info' => 'If set to a given username, it\'ll force the search to filter to just that username.',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'rpp',
+                    'name' => 'resultsPerPage',
                     'type' => 'Number',
-                    'info' => 'integer; results per page',
+                    'info' => 'Results per page (int).',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'pg',
+                    'name' => 'pageNumber',
                     'type' => 'Number',
-                    'info' => 'integer: the page number',
+                    'info' => 'The page (int), starting with 1.',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'vtn',
+                    'name' => 'vegetarian',
                     'type' => 'Number',
-                    'info' => 'when set to 1, limit to vegetarian (Powersearch-capable plan required)',
+                    'info' => 'When set to 1, limit to vegetarian (Powersearch-capable plan required).',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'vgn',
+                    'name' => 'vegan',
                     'type' => 'Number',
-                    'info' => 'when set to 1, limit to vegan (Powersearch-capable plan required)',
+                    'info' => 'When set to 1, limit to vegan (Powersearch-capable plan required).',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'chs',
+                    'name' => 'containsCheese',
                     'type' => 'Number',
-                    'info' => 'when set to 1, limit to contains-cheese (Powersearch-capable plan required)',
+                    'info' => 'When set to 1, limit to contains-cheese (Powersearch-capable plan required).',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'glf',
+                    'name' => 'glutenFree',
                     'type' => 'Number',
-                    'info' => 'when set to 1, limit to gluten-free (Powersearch-capable plan required)',
+                    'info' => 'When set to 1, limit to gluten-free (Powersearch-capable plan required).',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'ntf',
+                    'name' => 'nutFree',
                     'type' => 'Number',
-                    'info' => 'when set to 1, limit to nut-free (Powersearch-capable plan required)',
+                    'info' => 'When set to 1, limit to nut-free (Powersearch-capable plan required).',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'dyf',
+                    'name' => 'dairyFree',
                     'type' => 'Number',
-                    'info' => 'when set to 1, limit to dairy-free (Powersearch-capable plan required)',
+                    'info' => 'When set to 1, limit to dairy-free (Powersearch-capable plan required).',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'sff',
+                    'name' => 'seaFoodFree',
                     'type' => 'Number',
-                    'info' => 'when set to 1, limit to seafood-free (Powersearch-capable plan required)',
+                    'info' => 'When set to 1, limit to seafood-free (Powersearch-capable plan required).',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'slf',
+                    'name' => 'shellfishFree',
                     'type' => 'Number',
-                    'info' => 'when set to 1, limit to shellfish-free (Powersearch-capable plan required)',
+                    'info' => 'When set to 1, limit to shellfish-free (Powersearch-capable plan required).',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'tnf',
+                    'name' => 'treeNutFree',
                     'type' => 'Number',
-                    'info' => 'when set to 1, limit to tree-nut free (Powersearch-capable plan required)',
+                    'info' => 'When set to 1, limit to tree-nut free (Powersearch-capable plan required).',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'wmf',
+                    'name' => 'whiteMeatFree',
                     'type' => 'Number',
-                    'info' => 'when set to 1, limit to white-meat free (Powersearch-capable plan required)',
+                    'info' => 'When set to 1, limit to white-meat free (Powersearch-capable plan required).',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'rmf',
+                    'name' => 'redMeatFree',
                     'type' => 'Number',
-                    'info' => 'when set to 1, limit to red-meat free (Powersearch-capable plan required)',
+                    'info' => 'When set to 1, limit to red-meat free (Powersearch-capable plan required).',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'cps',
+                    'name' => 'containsPasta',
                     'type' => 'Number',
-                    'info' => 'when set to 1, recipe contains pasta, set to 0 means contains no pasta (Powersearch-capable plan required)',
+                    'info' => 'When set to 1, recipe contains pasta, set to 0 means contains no pasta (Powersearch-capable plan required).',
                     'required' => false,
                 ),
             ),
@@ -1979,12 +1973,12 @@ return array (
         ),
         array (
             'name' => 'getRandomRecipe',
-            'description' => 'description',
+            'description' => 'Get a random, home-page-quality Recipe.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -2013,12 +2007,12 @@ return array (
         ),
         array (
             'name' => 'getRecipeRaves',
-            'description' => 'description',
+            'description' => 'Get the recipe/comment tuples for those recipes with 4 or 5 star ratings.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -2034,15 +2028,15 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'pg',
+                    'name' => 'pageNumber',
                     'type' => 'Number',
-                    'info' => 'page, starting with 1',
+                    'info' => 'The page (int), starting with 1.',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'rpp',
+                    'name' => 'resultsPerPage',
                     'type' => 'Number',
-                    'info' => 'results per page',
+                    'info' => 'Results per page (int).',
                     'required' => false,
                 ),
             ),
@@ -2059,12 +2053,12 @@ return array (
         ),
         array (
             'name' => 'getUserRecentlyViewedRecipes',
-            'description' => 'description',
+            'description' => 'Get a list of recipes that the authenticated user has most recently viewed.',
             'args' => array (
                 array (
                     'name' => 'apiKey',
                     'type' => 'credentials',
-                    'info' => 'Your API Key',
+                    'info' => 'Your API Key.',
                     'required' => true,
                 ),
                 array (
@@ -2080,15 +2074,15 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'pg',
+                    'name' => 'pageNumber',
                     'type' => 'Number',
-                    'info' => 'Page number starting with 1',
+                    'info' => 'The page (int), starting with 1.',
                     'required' => false,
                 ),
                 array (
-                    'name' => 'rpp',
+                    'name' => 'resultsPerPage',
                     'type' => 'Number',
-                    'info' => 'results per page',
+                    'info' => 'Results per page (int).',
                     'required' => false,
                 ),
             ),
@@ -2107,20 +2101,20 @@ return array (
     'custom' => array (
         'getSingleRecipeCollection' => array (
             'dictionary' => array (
-                'id' => 'id',
-                'rpp' => 'rpp',
-                'pg' => 'pg',
+                'collectionId' => 'id',
+                'resultsPerPage' => 'rpp',
+                'pageNumber' => 'pg',
                 'test' => 'test',
                 'sessionForLogging' => 'sessionForLogging',
             ),
-            'vendorUrl' => 'http://api2.bigoven.com/collection/{{id}}',
+            'vendorUrl' => 'http://api2.bigoven.com/collection/{{collectionId}}',
             'method' => 'GET',
         ),
         'getRecipeCollectionMetadata' => array (
             'dictionary' => array (
-                'id' => 'id',
+                'collectionId' => 'id',
             ),
-            'vendorUrl' => 'http://api2.bigoven.com/collection/{{id}}/meta',
+            'vendorUrl' => 'http://api2.bigoven.com/collection/{{collectionId}}/meta',
             'method' => 'GET',
         ),
         'getRecipeCollections' => array (
@@ -2139,9 +2133,9 @@ return array (
         ),
         'getFoodGlossaryArticle' => array (
             'dictionary' => array (
-                'id' => 'id',
+                'articleId' => 'id',
             ),
-            'vendorUrl' => 'http://api2.bigoven.com/glossary/{{id}}',
+            'vendorUrl' => 'http://api2.bigoven.com/glossary/{{articleId}}',
             'method' => 'GET',
         ),
         'deleteItemsFromGroceryList' => array (
@@ -2158,47 +2152,64 @@ return array (
         ),
         'departmentalizeItemsInGroceryList' => array (
             'dictionary' => array (
-                'model' => 'model',
+                'model' => 'items',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/department',
             'method' => 'POST',
         ),
         'addSingleItemToGroceryList' => array (
             'dictionary' => array (
-                'newItem' => 'newItem',
+                'newItemName' => 'newItem_name',
+                'newItemQuantity' => 'newItem_quantity',
+                'newItemUnit' => 'newItem_unit',
+                'newItemNotes' => 'newItem_notes',
+                'newItemDepartment' => 'newItem_department',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/item',
             'method' => 'POST',
+            'custom' => true,
         ),
         'deleteItemFromGroceryList' => array (
             'dictionary' => array (
-                'guid' => 'guid',
+                'GUID' => 'guid',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/item/{{guid}}',
             'method' => 'DELETE',
         ),
         'updateGroceryItem' => array (
             'dictionary' => array (
-                'req' => 'req',
-                'guid' => 'guid',
+                'requisiteName' => 'req_name',
+                'requisiteQuantity' => 'req_quantity',
+                'requisiteUnit' => 'req_unit',
+                'requisiteNotes' => 'req_notes',
+                'requisiteDepartment' => 'req_department',
+                'GUID' => 'guid',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/item/{{guid}}',
             'method' => 'PUT',
+            'custom' => true,
         ),
         'addRecipeToGroceryList' => array (
             'dictionary' => array (
-                'data' => 'data',
+                'recipeId' => 'data_RecipeId',
+                'scale' => 'data_scale',
+                'markAsPending' => 'data_markAsPending',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/recipe',
             'method' => 'POST',
+            'custom' => true,
         ),
         'synchronizeGroceryList' => array (
             'dictionary' => array (
-                'req' => 'req',
+                'requisiteListItems' => 'req_list_Items',
+                'requisiteRecipes' => 'req_Recipes',
+                'since' => 'since',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/sync',
             'method' => 'POST',
+            'custom' => true,
         ),
+/*
         'createRecipe' => array (
             'dictionary' => array (
                 'recipe' => 'recipe',
@@ -2213,6 +2224,7 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe',
             'method' => 'PUT',
         ),
+*/
         'getRecipeAutocomplete' => array (
             'dictionary' => array (
                 'query' => 'query',
@@ -2237,7 +2249,7 @@ return array (
         'updateMyReviewReply' => array (
             'dictionary' => array (
                 'replyId' => 'replyId',
-                'data' => 'data',
+                'data' => 'Comment',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/review/replies/{{replyId}}',
             'method' => 'PUT',
@@ -2252,16 +2264,21 @@ return array (
         'updateReview' => array (
             'dictionary' => array (
                 'reviewId' => 'reviewId',
-                'review' => 'review',
+                'reviewStarRating' => 'review_StarRating',
+                'reviewMakeAgain' => 'review_MakeAgain',
+                'reviewComment' => 'review_Comment',
+                'reviewActiveMinutes' => 'review_ActiveMinutes',
+                'reviewTotalMinutes' => 'review_TotalMinutes',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/review/{{reviewId}}',
             'method' => 'PUT',
+            'custom' => true,
         ),
         'getReviewReplies' => array (
             'dictionary' => array (
                 'reviewId' => 'reviewId',
-                'pg' => 'pg',
-                'rpp' => 'rpp',
+                'pageNumber' => 'pg',
+                'resultsPerPage' => 'rpp',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/review/{{reviewId}}/replies',
             'method' => 'GET',
@@ -2269,7 +2286,7 @@ return array (
         'addReplyToReview' => array (
             'dictionary' => array (
                 'reviewId' => 'reviewId',
-                'data' => 'data',
+                'data' => 'Comment',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/review/{{reviewId}}/replies',
             'method' => 'POST',
@@ -2278,31 +2295,31 @@ return array (
             'dictionary' => array (
                 'test' => 'test',
                 'devicetype' => 'devicetype',
-                'lat' => 'lat',
-                'lng' => 'lng',
+                'scanLatitude' => 'lat',
+                'scanLongitude' => 'lng',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/scan',
-            'method' => 'POST',
+            'method' => 'POST-GET',
         ),
         'deleteMySingleRecipe' => array (
             'dictionary' => array (
-                'id' => 'id',
+                'recipeId' => 'id',
             ),
-            'vendorUrl' => 'http://api2.bigoven.com/recipe/{{id}}',
+            'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}',
             'method' => 'DELETE',
         ),
         'getMySingleRecipe' => array (
             'dictionary' => array (
-                'id' => 'id',
+                'recipeId' => 'id',
                 'prefetch' => 'prefetch',
             ),
-            'vendorUrl' => 'http://api2.bigoven.com/recipe/{{id}}',
+            'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}',
             'method' => 'GET',
         ),
         'createRecipeFeedback' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
-                'data' => 'data',
+                'data' => 'feedback',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/feedback',
             'method' => 'POST',
@@ -2311,19 +2328,24 @@ return array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
                 'caption' => 'caption',
-                'lat' => 'lat',
-                'lng' => 'lng',
+                'imageLatitude' => 'lat',
+                'imageLongitude' => 'lng',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/image',
-            'method' => 'POST',
+            'method' => 'POST-GET',
         ),
         'createRecipeNote' => array (
             'dictionary' => array (
-                'recipeId' => 'recipeId',
-                'note' => 'note',
+                'recipeId' => 'recipeId', // -> recipeNote_RecipeID
+                'note' => 'note', // -> recipeNote_Notes
+                'recipeNotePeople' => 'recipeNote_People',
+                'recipeNoteVariations' => 'recipeNote_Variations',
+                'recipeNoteUserID' => 'recipeNote_UserID',
+                'recipeNoteGUID' => 'recipeNote_GUID',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/note',
             'method' => 'POST',
+            'custom' => true,
         ),
         'deleteRecipeNote' => array (
             'dictionary' => array (
@@ -2343,36 +2365,41 @@ return array (
         ),
         'updateRecipeNote' => array (
             'dictionary' => array (
-                'recipeId' => 'recipeId',
-                'noteId' => 'noteId',
-                'recipeNote' => 'recipeNote',
+                'recipeId' => 'recipeId', // -> recipeNote_RecipeID
+                'noteId' => 'noteId', // -> recipeNote_ID
+                'recipeNoteNotes' => 'recipeNote_Notes',
+                'recipeNotePeople' => 'recipeNote_People',
+                'recipeNoteVariations' => 'recipeNote_Variations',
+                'recipeNoteUserID' => 'recipeNote_UserID',
+                'recipeNoteGUID' => 'recipeNote_GUID',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/note/{{noteId}}',
             'method' => 'PUT',
+            'custom' => true,
         ),
         'getRecipeNotes' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
-                'pg' => 'pg',
-                'rpp' => 'rpp',
+                'pageNumber' => 'pg',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/notes',
             'method' => 'GET',
+            'custom' => true, // duplicate recipeId to rpp
         ),
         'getRecipePhotos' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
-                'pg' => 'pg',
-                'rpp' => 'rpp',
+                'pageNumber' => 'pg',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/photos',
             'method' => 'GET',
+            'custom' => true, // duplicate recipeId to rpp
         ),
         'getRelatedRecipes' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
-                'pg' => 'pg',
-                'rpp' => 'rpp',
+                'pageNumber' => 'pg',
+                'resultsPerPage' => 'rpp',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/related',
             'method' => 'GET',
@@ -2387,16 +2414,21 @@ return array (
         'createReview' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
-                'data' => 'data',
+                'StarRating' => 'data_StarRating',
+                'MakeAgain' => 'data_MakeAgain',
+                'Comment' => 'data_Comment',
+                'ActiveMinutes' => 'data_ActiveMinutes',
+                'TotalMinutes' => 'data_TotalMinutes',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/review',
             'method' => 'POST',
+            'custom' => true,
         ),
         'getRecipeReviews' => array (
             'dictionary' => array (
                 'recipeId' => 'recipeId',
-                'pg' => 'pg',
-                'rpp' => 'rpp',
+                'pageNumber' => 'pg',
+                'resultsPerPage' => 'rpp',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/reviews',
             'method' => 'GET',
@@ -2410,38 +2442,38 @@ return array (
         ),
         'searchRecipes' => array (
             'dictionary' => array (
-                'any_kw' => 'any_kw',
+                'searchAnywhereByKeyword' => 'any_kw',
                 'folder' => 'folder',
-                'coll' => 'coll',
+                'collectionId' => 'coll',
                 'filter' => 'filter',
-                'title_kw' => 'title_kw',
+                'searchInTitleByKeyword' => 'title_kw',
                 'userId' => 'userId',
                 'username' => 'username',
                 'token' => 'token',
                 'photos' => 'photos',
                 'boostmine' => 'boostmine',
-                'include_cat' => 'include_cat',
-                'exclude_cat' => 'exclude_cat',
-                'includePrimarycat' => 'include_primarycat',
-                'include_ing' => 'include_ing',
-                'exclude_ing' => 'exclude_ing',
+                'includeCategoryId' => 'include_cat',
+                'excludeCategoryId' => 'exclude_cat',
+                'includePrimaryCat' => 'include_primarycat',
+                'includeIngredients' => 'include_ing',
+                'excludeIngredients' => 'exclude_ing',
                 'cuisine' => 'cuisine',
                 'db' => 'db',
                 'userset' => 'userset',
-                'rpp' => 'rpp',
-                'pg' => 'pg',
-                'vtn' => 'vtn',
-                'vgn' => 'vgn',
-                'chs' => 'chs',
-                'glf' => 'glf',
-                'ntf' => 'ntf',
-                'dyf' => 'dyf',
-                'sff' => 'sff',
-                'slf' => 'slf',
-                'tnf' => 'tnf',
-                'wmf' => 'wmf',
-                'rmf' => 'rmf',
-                'cps' => 'cps',
+                'resultsPerPage' => 'rpp',
+                'pageNumber' => 'pg',
+                'vegetarian' => 'vtn',
+                'vegan' => 'vgn',
+                'containsCheese' => 'chs',
+                'glutenFree' => 'glf',
+                'nutFree' => 'ntf',
+                'dairyFree' => 'dyf',
+                'seaFoodFree' => 'sff',
+                'shellfishFree' => 'slf',
+                'treeNutFree' => 'tnf',
+                'whiteMeatFree' => 'wmf',
+                'redMeatFree' => 'rmf',
+                'containsPasta' => 'cps',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipes',
             'method' => 'GET',
@@ -2454,16 +2486,16 @@ return array (
         ),
         'getRecipeRaves' => array (
             'dictionary' => array (
-                'pg' => 'pg',
-                'rpp' => 'rpp',
+                'pageNumber' => 'pg',
+                'resultsPerPage' => 'rpp',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipes/raves',
             'method' => 'GET',
         ),
         'getUserRecentlyViewedRecipes' => array (
             'dictionary' => array (
-                'pg' => 'pg',
-                'rpp' => 'rpp',
+                'pageNumber' => 'pg',
+                'resultsPerPage' => 'rpp',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipes/recentviews',
             'method' => 'GET',
