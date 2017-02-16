@@ -1,7 +1,7 @@
 {
     "package": "BigOven",
-    "tagline": "The best recipe organizer, grocery list and menu app for home cooks.",
-    "description": "With BigOven, you can take your recipes anywhere, make grocery lists and easily share your favorite creations with your friends, family or even your future self when you need them.",
+    "tagline": "Access 350,000+ recipes, reviews and nutrition facts.",
+    "description": "Connect to the BigOven recipe API to search and display 350,000+ recipes, reviews and ingredient lists. Test an API call and export the code into your app now.",
     "image": "https://logo.clearbit.com/bigoven.com?s=128",
     "repo": "https://github.com/RapidSoftwareSolutions/Marketplace-BigOven-package",
     "keywords": [
@@ -1124,7 +1124,7 @@
                     "required": true
                 },
                 {
-                    "name": "RecipeId",
+                    "name": "recipeId",
                     "type": "Number",
                     "info": "The Recipe ID to retrieve.",
                     "required": true
@@ -1708,31 +1708,31 @@
                     "required": true
                 },
                 {
-                    "name": "Comment",
+                    "name": "comment",
                     "type": "String",
                     "info": "Review data.",
                     "required": true
                 },
                 {
-                    "name": "StarRating",
+                    "name": "starRating",
                     "type": "String",
                     "info": "Review Star rating.",
                     "required": true
                 },
                 {
-                    "name": "MakeAgain",
+                    "name": "makeAgain",
                     "type": "String",
                     "info": "Review make again",
                     "required": true
                 },
                 {
-                    "name": "ActiveMinutes",
+                    "name": "activeMinutes",
                     "type": "String",
                     "info": "Review active minutes.",
                     "required": true
                 },
                 {
-                    "name": "TotalMinutes",
+                    "name": "totalMinutes",
                     "type": "String",
                     "info": "Review total minutes.",
                     "required": true

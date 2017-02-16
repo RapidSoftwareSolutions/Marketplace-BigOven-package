@@ -1,8 +1,8 @@
 <?php
 return array (
     'package' => 'BigOven',
-    'tagline' => 'The best recipe organizer, grocery list and menu app for home cooks.',
-    'description' => 'With BigOven, you can take your recipes anywhere, make grocery lists and easily share your favorite creations with your friends, family or even your future self when you need them.',
+    'tagline' => 'Access 350,000+ recipes, reviews and nutrition facts.',
+    'description' => 'Connect to the BigOven recipe API to search and display 350,000+ recipes, reviews and ingredient lists. Test an API call and export the code into your app now.',
     'image' => 'https://logo.clearbit.com/bigoven.com?s=128',
     'repo' => 'https://github.com/RapidSoftwareSolutions/Marketplace-BigOven-package',
     'keywords' => array ('API', 'recipe', 'cooking', 'BigOven'),
@@ -1198,7 +1198,7 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'RecipeId',
+                    'name' => 'recipeId',
                     'type' => 'Number',
                     'info' => 'The Recipe ID to retrieve.',
                     'required' => true,
@@ -1782,31 +1782,31 @@ return array (
                     'required' => true,
                 ),
                 array (
-                    'name' => 'Comment',
+                    'name' => 'comment',
                     'type' => 'String',
                     'info' => 'Review data.',
                     'required' => true,
                 ),
                 array (
-                    'name' => 'StarRating',
+                    'name' => 'starRating',
                     'type' => 'String',
                     'info' => 'Review Star rating.',
                     'required' => true,
                 ),
                 array (
-                    'name' => 'MakeAgain',
+                    'name' => 'sakeAgain',
                     'type' => 'String',
                     'info' => 'Review make again',
                     'required' => true,
                 ),
                 array (
-                    'name' => 'ActiveMinutes',
+                    'name' => 'activeMinutes',
                     'type' => 'String',
                     'info' => 'Review active minutes.',
                     'required' => true,
                 ),
                 array (
-                    'name' => 'TotalMinutes',
+                    'name' => 'totalMinutes',
                     'type' => 'String',
                     'info' => 'Review total minutes.',
                     'required' => true,
@@ -2271,6 +2271,9 @@ return array (
     'custom' => array (
         'getSingleRecipeCollection' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'collectionId' => 'id',
                 'resultsPerPage' => 'rpp',
                 'pageNumber' => 'pg',
@@ -2282,6 +2285,9 @@ return array (
         ),
         'getRecipeCollectionMetadata' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'collectionId' => 'id',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/collection/{{collectionId}}/meta',
@@ -2289,6 +2295,9 @@ return array (
         ),
         'getRecipeCollections' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'test' => 'test',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/collections',
@@ -2296,6 +2305,9 @@ return array (
         ),
         'getFoodGlossaryArticleByTerm' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'term' => 'term',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/glossary/byterm/{{term}}',
@@ -2303,6 +2315,9 @@ return array (
         ),
         'getFoodGlossaryArticle' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'articleId' => 'id',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/glossary/{{articleId}}',
@@ -2310,18 +2325,27 @@ return array (
         ),
         'deleteItemsFromGroceryList' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist',
             'method' => 'DELETE',
         ),
         'getMyGroceryList' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist',
             'method' => 'GET',
         ),
         'departmentalizeItemsInGroceryList' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'model' => 'items',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/department',
@@ -2329,6 +2353,9 @@ return array (
         ),
         'addSingleItemToGroceryList' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'newItemName' => 'newItem_name',
                 'newItemQuantity' => 'newItem_quantity',
                 'newItemUnit' => 'newItem_unit',
@@ -2341,6 +2368,9 @@ return array (
         ),
         'deleteItemFromGroceryList' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'GUID' => 'guid',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/grocerylist/item/{{guid}}',
@@ -2348,6 +2378,9 @@ return array (
         ),
         'updateGroceryItem' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'requisiteName' => 'req_name',
                 'requisiteQuantity' => 'req_quantity',
                 'requisiteUnit' => 'req_unit',
@@ -2361,6 +2394,9 @@ return array (
         ),
         'addRecipeToGroceryList' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'data_RecipeId',
                 'scale' => 'data_scale',
                 'markAsPending' => 'data_markAsPending',
@@ -2371,6 +2407,9 @@ return array (
         ),
         'synchronizeGroceryList' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'requisiteItems' => 'req_list_Items',
                 'requisiteRecipes' => 'req_list_Recipes',
                 'since' => 'since',
@@ -2382,6 +2421,9 @@ return array (
 /*
         'createRecipe' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipe' => 'recipe',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe',
@@ -2389,6 +2431,9 @@ return array (
         ),
         'updateRecipe' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipe' => 'recipe',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe',
@@ -2397,6 +2442,9 @@ return array (
 */
         'getRecipeAutocomplete' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'query' => 'query',
                 'limit' => 'limit',
             ),
@@ -2405,12 +2453,18 @@ return array (
         ),
         'getRecipeCategories' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/categories',
             'method' => 'GET',
         ),
         'deleteMyReviewReply' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'replyId' => 'replyId',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/review/replies/{{replyId}}',
@@ -2418,6 +2472,9 @@ return array (
         ),
         'updateMyReviewReply' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'replyId' => 'replyId',
                 'data' => 'Comment',
             ),
@@ -2426,6 +2483,9 @@ return array (
         ),
         'getSingleReview' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'reviewId' => 'reviewId',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/review/{{reviewId}}',
@@ -2433,6 +2493,9 @@ return array (
         ),
         'updateReview' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'reviewId' => 'reviewId',
                 'reviewStarRating' => 'review_StarRating',
                 'reviewMakeAgain' => 'review_MakeAgain',
@@ -2446,6 +2509,9 @@ return array (
         ),
         'getReviewReplies' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'reviewId' => 'reviewId',
                 'pageNumber' => 'pg',
                 'resultsPerPage' => 'rpp',
@@ -2455,6 +2521,9 @@ return array (
         ),
         'addReplyToReview' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'reviewId' => 'reviewId',
                 'data' => 'Comment',
             ),
@@ -2463,6 +2532,9 @@ return array (
         ),
         'createRecipeScan' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'test' => 'test',
                 'devicetype' => 'devicetype',
                 'scanLatitude' => 'lat',
@@ -2473,6 +2545,9 @@ return array (
         ),
         'deleteMySingleRecipe' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'id',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}',
@@ -2480,6 +2555,9 @@ return array (
         ),
         'getMySingleRecipe' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'id',
                 'prefetch' => 'prefetch',
             ),
@@ -2488,6 +2566,9 @@ return array (
         ),
         'createRecipeFeedback' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'recipeId',
                 'data' => 'feedback',
             ),
@@ -2496,6 +2577,9 @@ return array (
         ),
         'addRecipeImage' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'recipeId',
                 'caption' => 'caption',
                 'imageLatitude' => 'lat',
@@ -2506,6 +2590,9 @@ return array (
         ),
         'createRecipeNote' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'recipeId', // -> recipeNote_RecipeID
                 'recipeNote' => 'recipeNote_Notes',
                 'recipeNotePeople' => 'recipeNote_People',
@@ -2519,6 +2606,9 @@ return array (
         ),
         'deleteRecipeNote' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'recipeId',
                 'noteId' => 'noteId',
             ),
@@ -2527,6 +2617,9 @@ return array (
         ),
         'getMySingleRecipeNote' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'recipeId',
                 'noteId' => 'noteId',
             ),
@@ -2535,6 +2628,9 @@ return array (
         ),
         'updateRecipeNote' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'recipeId', // -> recipeNote_RecipeID
                 'noteId' => 'noteId', // -> recipeNote_ID
                 'recipeNoteNotes' => 'recipeNote_Notes',
@@ -2549,6 +2645,9 @@ return array (
         ),
         'getRecipeNotes' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'recipeId',
                 'pageNumber' => 'pg',
             ),
@@ -2558,6 +2657,9 @@ return array (
         ),
         'getRecipePhotos' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'recipeId',
                 'pageNumber' => 'pg',
             ),
@@ -2567,6 +2669,9 @@ return array (
         ),
         'getRelatedRecipes' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'recipeId',
                 'pageNumber' => 'pg',
                 'resultsPerPage' => 'rpp',
@@ -2576,6 +2681,9 @@ return array (
         ),
         'getMyRecipeReview' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'recipeId',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/review',
@@ -2583,12 +2691,15 @@ return array (
         ),
         'createReview' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'recipeId',
-                'StarRating' => 'data_StarRating',
-                'MakeAgain' => 'data_MakeAgain',
-                'Comment' => 'data_Comment',
-                'ActiveMinutes' => 'data_ActiveMinutes',
-                'TotalMinutes' => 'data_TotalMinutes',
+                'starRating' => 'data_StarRating',
+                'makeAgain' => 'data_MakeAgain',
+                'comment' => 'data_Comment',
+                'activeMinutes' => 'data_ActiveMinutes',
+                'totalMinutes' => 'data_TotalMinutes',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/review',
             'method' => 'POST',
@@ -2596,6 +2707,9 @@ return array (
         ),
         'getRecipeReviews' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'recipeId',
                 'pageNumber' => 'pg',
                 'resultsPerPage' => 'rpp',
@@ -2605,6 +2719,9 @@ return array (
         ),
         'getRecipeScanImages' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'recipeId' => 'recipeId',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/scans',
@@ -2612,6 +2729,9 @@ return array (
         ),
         'searchRecipes' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'searchAnywhereByKeyword' => 'any_kw',
                 'folder' => 'folder',
                 'collectionId' => 'coll',
@@ -2650,12 +2770,18 @@ return array (
         ),
         'getRandomRecipe' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipes/random',
             'method' => 'GET',
         ),
         'getRecipeRaves' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'pageNumber' => 'pg',
                 'resultsPerPage' => 'rpp',
             ),
@@ -2664,6 +2790,9 @@ return array (
         ),
         'getUserRecentlyViewedRecipes' => array (
             'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'credentialsUsername' => 'credentialsUsername',
+                'credentialsPassword' => 'credentialsPassword',
                 'pageNumber' => 'pg',
                 'resultsPerPage' => 'rpp',
             ),

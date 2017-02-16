@@ -124,13 +124,24 @@ class Router
 
             // Prepare param
             $sendParam = $this->prepareParam($inputPram, $blockCustom['dictionary'], $blockName);
-            // remove accessToken from param list, for sent as header
-            $accessToken = '';
-            if(isset($sendParam['accessToken'])){
-                $accessToken = $sendParam['accessToken'];
-                unset($sendParam['accessToken']);
+            // remove apiKey from param list, for sent as header
+            $apiKey = '';
+            if(isset($sendParam['apiKey'])){
+                $apiKey = $sendParam['apiKey'];
+                unset($sendParam['apiKey']);
             }
-            $appClientId = (isset($sendParam['appClientId']))?$sendParam['appClientId']:'';
+            // remove credentialsUsername from param list, for sent as header
+            $credentialsUsername = '';
+            if(isset($sendParam['credentialsUsername'])){
+                $credentialsUsername = $sendParam['credentialsUsername'];
+                unset($sendParam['credentialsUsername']);
+            }
+            // remove credentialsPassword from param list, for sent as header
+            $credentialsPassword = '';
+            if(isset($sendParam['credentialsPassword'])){
+                $credentialsPassword = $sendParam['credentialsPassword'];
+                unset($sendParam['credentialsPassword']);
+            }
             $sendBody = $sendParam;
             // If need, custom make custom processing for route
             if(isset($blockCustom['custom'])&&$blockCustom['custom'] == true){
@@ -144,7 +155,7 @@ class Router
             }
 
             // Make request
-            $result = $this->httpRequest($vendorUrl, $method, $accessToken, $appClientId, $sendBody);
+            $result = $this->httpRequest($vendorUrl, $method, $apiKey, $credentialsUsername, $credentialsPassword, $sendBody);
             echo json_encode($result);
             exit(200);
         });
@@ -265,7 +276,7 @@ class Router
         return $result;
     }
 
-    protected function httpRequest($url, $method, $accessToken, $appClientId, $sendBody)
+    protected function httpRequest($url, $method, $apiKey, $credentialsUsername, $credentialsPassword, $sendBody)
     {
         if($sendBody == '[]' || $sendBody == '{}'){
             $sendBody = '';
@@ -279,14 +290,17 @@ class Router
                     'Content-Type' => 'application/x-www-form-urlencoded',
                 ] ];
 
-            $clientSetup['headers']['Authorization'] = 'Bearer ' . $accessToken;
-            $clientSetup['headers']['User-Agent'] = 'RapidAPI-' . $appClientId;
+            $clientSetup['headers']['X-BigOven-API-Key'] = $apiKey;
+            $clientSetup['headers']['Authorization'] = 'Basic ' . base64_encode($credentialsUsername.':'.$credentialsPassword);
 
             if($method == 'GET'){
                 $clientSetup['query'] = json_decode($sendBody, true);
             }else{
                 $clientSetup['form_params'] = json_decode($sendBody, true);
             }
+            $clientSetup['query']['api_key'] = $apiKey;
+
+var_dump($method, $url, $clientSetup);
 
             $vendorResponse = $this->http->request($method, $url, $clientSetup);
             $responseBody = $vendorResponse->getBody()->getContents();
