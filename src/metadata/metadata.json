@@ -374,31 +374,31 @@
                 {
                     "name": "newItemName",
                     "type": "String",
-                    "info": "newItemName",
+                    "info": "New item name.",
                     "required": true
                 },
                 {
                     "name": "newItemQuantity",
                     "type": "String",
-                    "info": "newItemQuantity",
+                    "info": "New item quantity.",
                     "required": true
                 },
                 {
                     "name": "newItemUnit",
                     "type": "String",
-                    "info": "newItemUnit",
+                    "info": "New item unit.",
                     "required": true
                 },
                 {
                     "name": "newItemNotes",
                     "type": "String",
-                    "info": "newItemNotes",
+                    "info": "New item notes.",
                     "required": true
                 },
                 {
                     "name": "newItemDepartment",
                     "type": "String",
-                    "info": "newItemDepartment",
+                    "info": "New item department.",
                     "required": true
                 }
             ],
@@ -436,7 +436,7 @@
                     "required": true
                 },
                 {
-                    "name": "GUID",
+                    "name": "guid",
                     "type": "String",
                     "info": "Grocery list item id (GUID).",
                     "required": true
