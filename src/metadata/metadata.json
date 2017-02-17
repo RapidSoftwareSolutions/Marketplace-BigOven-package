@@ -436,7 +436,7 @@
                     "required": true
                 },
                 {
-                    "name": "guid",
+                    "name": "GUID",
                     "type": "String",
                     "info": "Grocery list item id (GUID).",
                     "required": true
@@ -698,12 +698,6 @@
                     "required": false
                 },
                 {
-                    "name": "webURL",
-                    "type": "String",
-                    "info": "Recipe web url.",
-                    "required": false
-                },
-                {
                     "name": "imageURL",
                     "type": "String",
                     "info": "Recipe image url.",
@@ -809,12 +803,6 @@
                     "name": "adminBoost",
                     "type": "Number",
                     "info": "Recipe admin boost.",
-                    "required": false
-                },
-                {
-                    "name": "heroPhotoUrl",
-                    "type": "String",
-                    "info": "Recipe hero photo url.",
                     "required": false
                 },
                 {
@@ -912,12 +900,6 @@
                     "required": false
                 },
                 {
-                    "name": "webURL",
-                    "type": "String",
-                    "info": "Recipe web url.",
-                    "required": false
-                },
-                {
                     "name": "imageURL",
                     "type": "String",
                     "info": "Recipe image url.",
@@ -1023,12 +1005,6 @@
                     "name": "adminBoost",
                     "type": "Number",
                     "info": "Recipe admin boost.",
-                    "required": false
-                },
-                {
-                    "name": "heroPhotoUrl",
-                    "type": "String",
-                    "info": "Recipe hero photo url.",
                     "required": false
                 },
                 {

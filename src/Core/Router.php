@@ -300,9 +300,6 @@ class Router
             }
             $clientSetup['query']['api_key'] = $apiKey;
 
-var_dump($method, $url, json_decode($sendBody, true), $clientSetup);
-//exit();
-
             $vendorResponse = $this->http->request($method, $url, $clientSetup);
             $responseBody = $vendorResponse->getBody()->getContents();
 
