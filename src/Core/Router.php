@@ -130,17 +130,17 @@ class Router
                 $apiKey = $sendParam['apiKey'];
                 unset($sendParam['apiKey']);
             }
-            // remove credentialsUsername from param list, for sent as header
-            $credentialsUsername = '';
-            if(isset($sendParam['credentialsUsername'])){
-                $credentialsUsername = $sendParam['credentialsUsername'];
-                unset($sendParam['credentialsUsername']);
+            // remove bigovenUsername from param list, for sent as header
+            $bigovenUsername = '';
+            if(isset($sendParam['bigovenUsername'])){
+                $bigovenUsername = $sendParam['bigovenUsername'];
+                unset($sendParam['bigovenUsername']);
             }
-            // remove credentialsPassword from param list, for sent as header
-            $credentialsPassword = '';
-            if(isset($sendParam['credentialsPassword'])){
-                $credentialsPassword = $sendParam['credentialsPassword'];
-                unset($sendParam['credentialsPassword']);
+            // remove bigovenPassword from param list, for sent as header
+            $bigovenPassword = '';
+            if(isset($sendParam['bigovenPassword'])){
+                $bigovenPassword = $sendParam['bigovenPassword'];
+                unset($sendParam['bigovenPassword']);
             }
             $sendBody = $sendParam;
             // If need, custom make custom processing for route
@@ -155,7 +155,7 @@ class Router
             }
 
             // Make request
-            $result = $this->httpRequest($vendorUrl, $method, $apiKey, $credentialsUsername, $credentialsPassword, $sendBody);
+            $result = $this->httpRequest($vendorUrl, $method, $apiKey, $bigovenUsername, $bigovenPassword, $sendBody);
             echo json_encode($result);
             exit(200);
         });
@@ -276,7 +276,7 @@ class Router
         return $result;
     }
 
-    protected function httpRequest($url, $method, $apiKey, $credentialsUsername, $credentialsPassword, $sendBody)
+    protected function httpRequest($url, $method, $apiKey, $bigovenUsername, $bigovenPassword, $sendBody)
     {
         if($sendBody == '[]' || $sendBody == '{}'){
             $sendBody = '';
@@ -291,7 +291,7 @@ class Router
                 ] ];
 
             $clientSetup['headers']['X-BigOven-API-Key'] = $apiKey;
-            $clientSetup['headers']['Authorization'] = 'Basic ' . base64_encode($credentialsUsername.':'.$credentialsPassword);
+            $clientSetup['headers']['Authorization'] = 'Basic ' . base64_encode($bigovenUsername.':'.$bigovenPassword);
 
             if($method == 'GET'){
                 $clientSetup['query'] = json_decode($sendBody, true);
@@ -299,8 +299,6 @@ class Router
                 $clientSetup['form_params'] = json_decode($sendBody, true);
             }
             $clientSetup['query']['api_key'] = $apiKey;
-
-var_dump($method, $url, $clientSetup);
 
             $vendorResponse = $this->http->request($method, $url, $clientSetup);
             $responseBody = $vendorResponse->getBody()->getContents();

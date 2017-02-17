@@ -13,9 +13,7 @@
     "accounts": {
         "domain": "bigoven.com",
         "credentials": [
-            "apiKey",
-            "credentialsUsername",
-            "credentialsPassword"
+            "apiKey"
         ]
     },
     "blocks": [
@@ -30,14 +28,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -94,14 +92,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -134,14 +132,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -174,14 +172,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -214,14 +212,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -254,14 +252,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 }
@@ -288,14 +286,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 }
@@ -322,14 +320,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -362,14 +360,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -426,14 +424,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -466,14 +464,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -536,14 +534,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -588,33 +586,679 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
                 {
                     "name": "requisiteItems",
                     "type": "Array",
-                    "info": "Grocery list items.",
+                    "info": "Array of JSON objects, grocery list items.",
                     "required": true
                 },
                 {
                     "name": "requisiteRecipes",
                     "type": "Array",
-                    "info": "Grocery list recipes.",
+                    "info": "Array of JSON objects, grocery list recipes.",
                     "required": true
                 },
                 {
                     "name": "since",
                     "type": "String",
                     "info": "Grocery since.",
+                    "required": false
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
+            "name": "createRecipe",
+            "description": "Add a new recipe.",
+            "args": [
+                {
+                    "name": "apiKey",
+                    "type": "credentials",
+                    "info": "Your API Key.",
+                    "required": true
+                },
+                {
+                    "name": "bigovenUsername",
+                    "type": "String",
+                    "info": "Username of user.",
+                    "required": true
+                },
+                {
+                    "name": "bigovenPassword",
+                    "type": "String",
+                    "info": "Password of user.",
+                    "required": true
+                },
+                {
+                    "name": "title",
+                    "type": "String",
+                    "info": "Recipe title.",
+                    "required": true
+                },
+                {
+                    "name": "description",
+                    "type": "String",
+                    "info": "Recipe description.",
+                    "required": true
+                },
+                {
+                    "name": "category",
+                    "type": "String",
+                    "info": "Recipe category.",
+                    "required": true
+                },
+                {
+                    "name": "subcategory",
+                    "type": "String",
+                    "info": "Recipe subcategory.",
+                    "required": true
+                },
+                {
+                    "name": "primaryIngredient",
+                    "type": "String",
+                    "info": "Recipe primary ingredient.",
+                    "required": true
+                },
+                {
+                    "name": "cuisine",
+                    "type": "String",
+                    "info": "Recipe cuisine.",
+                    "required": false
+                },
+                {
+                    "name": "microcategory",
+                    "type": "String",
+                    "info": "Recipe microcategory.",
+                    "required": false
+                },
+                {
+                    "name": "starRating",
+                    "type": "Number",
+                    "info": "Recipe star rating.",
+                    "required": false
+                },
+                {
+                    "name": "webURL",
+                    "type": "String",
+                    "info": "Recipe web url.",
+                    "required": false
+                },
+                {
+                    "name": "imageURL",
+                    "type": "String",
+                    "info": "Recipe image url.",
+                    "required": false
+                },
+                {
+                    "name": "instructions",
+                    "type": "String",
+                    "info": "Recipe instructions.",
+                    "required": false
+                },
+                {
+                    "name": "yieldNumber",
+                    "type": "Number",
+                    "info": "Recipe yield number.",
+                    "required": false
+                },
+                {
+                    "name": "yieldUnit",
+                    "type": "String",
+                    "info": "Recipe yield unit.",
+                    "required": false
+                },
+                {
+                    "name": "totalMinutes",
+                    "type": "Number",
+                    "info": "Recipe total minutes.",
+                    "required": false
+                },
+                {
+                    "name": "activeMinutes",
+                    "type": "Number",
+                    "info": "Recipe active minutes.",
+                    "required": false
+                },
+                {
+                    "name": "isPrivate",
+                    "type": "Boolean",
+                    "info": "Recipe is private.",
+                    "required": false
+                },
+                {
+                    "name": "isBookmark",
+                    "type": "Boolean",
+                    "info": "Recipe is bookmark.",
+                    "required": false
+                },
+                {
+                    "name": "bookmarkURL",
+                    "type": "String",
+                    "info": "Recipe bookmark url.",
+                    "required": false
+                },
+                {
+                    "name": "bookmarkSiteLogo",
+                    "type": "String",
+                    "info": "Recipe bookmark site logo.",
+                    "required": false
+                },
+                {
+                    "name": "bookmarkImageURL",
+                    "type": "String",
+                    "info": "Recipe bookmark image url.",
+                    "required": false
+                },
+                {
+                    "name": "adTags",
+                    "type": "String",
+                    "info": "Recipe ad tags.",
+                    "required": false
+                },
+                {
+                    "name": "ingredientsTextBlock",
+                    "type": "String",
+                    "info": "Recipe ingredients text block.",
+                    "required": false
+                },
+                {
+                    "name": "allCategoriesText",
+                    "type": "String",
+                    "info": "Recipe all categories text.",
+                    "required": false
+                },
+                {
+                    "name": "isSponsored",
+                    "type": "Boolean",
+                    "info": "Recipe is sponsored.",
+                    "required": false
+                },
+                {
+                    "name": "collection",
+                    "type": "String",
+                    "info": "Recipe collection.",
+                    "required": false
+                },
+                {
+                    "name": "collectionID",
+                    "type": "Number",
+                    "info": "Recipe collection identifier.",
+                    "required": false
+                },
+                {
+                    "name": "adminBoost",
+                    "type": "Number",
+                    "info": "Recipe admin boost.",
+                    "required": false
+                },
+                {
+                    "name": "heroPhotoUrl",
+                    "type": "String",
+                    "info": "Recipe hero photo url.",
+                    "required": false
+                },
+                {
+                    "name": "poster",
+                    "type": "JSON",
+                    "info": "SONObject, recipe poster.",
+                    "required": false
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
+            "name": "updateRecipe",
+            "description": "Update a recipe.",
+            "args": [
+                {
+                    "name": "apiKey",
+                    "type": "credentials",
+                    "info": "Your API Key.",
+                    "required": true
+                },
+                {
+                    "name": "bigovenUsername",
+                    "type": "String",
+                    "info": "Username of user.",
+                    "required": true
+                },
+                {
+                    "name": "bigovenPassword",
+                    "type": "String",
+                    "info": "Password of user.",
+                    "required": true
+                },
+                {
+                    "name": "recipeID",
+                    "type": "Number",
+                    "info": "Recipe identifier.",
+                    "required": true
+                },
+                {
+                    "name": "title",
+                    "type": "String",
+                    "info": "Recipe title.",
+                    "required": false
+                },
+                {
+                    "name": "description",
+                    "type": "String",
+                    "info": "Recipe description.",
+                    "required": false
+                },
+                {
+                    "name": "category",
+                    "type": "String",
+                    "info": "Recipe category.",
+                    "required": false
+                },
+                {
+                    "name": "subcategory",
+                    "type": "String",
+                    "info": "Recipe subcategory.",
+                    "required": false
+                },
+                {
+                    "name": "primaryIngredient",
+                    "type": "String",
+                    "info": "Recipe primary ingredient.",
+                    "required": false
+                },
+                {
+                    "name": "cuisine",
+                    "type": "String",
+                    "info": "Recipe cuisine.",
+                    "required": false
+                },
+                {
+                    "name": "microcategory",
+                    "type": "String",
+                    "info": "Recipe microcategory.",
+                    "required": false
+                },
+                {
+                    "name": "starRating",
+                    "type": "Number",
+                    "info": "Recipe star rating.",
+                    "required": false
+                },
+                {
+                    "name": "webURL",
+                    "type": "String",
+                    "info": "Recipe web url.",
+                    "required": false
+                },
+                {
+                    "name": "imageURL",
+                    "type": "String",
+                    "info": "Recipe image url.",
+                    "required": false
+                },
+                {
+                    "name": "instructions",
+                    "type": "String",
+                    "info": "Recipe instructions.",
+                    "required": false
+                },
+                {
+                    "name": "yieldNumber",
+                    "type": "Number",
+                    "info": "Recipe yield number.",
+                    "required": false
+                },
+                {
+                    "name": "yieldUnit",
+                    "type": "String",
+                    "info": "Recipe yield unit.",
+                    "required": false
+                },
+                {
+                    "name": "totalMinutes",
+                    "type": "Number",
+                    "info": "Recipe total minutes.",
+                    "required": false
+                },
+                {
+                    "name": "activeMinutes",
+                    "type": "Number",
+                    "info": "Recipe active minutes.",
+                    "required": false
+                },
+                {
+                    "name": "isPrivate",
+                    "type": "Boolean",
+                    "info": "Recipe is private.",
+                    "required": false
+                },
+                {
+                    "name": "isBookmark",
+                    "type": "Boolean",
+                    "info": "Recipe is bookmark.",
+                    "required": false
+                },
+                {
+                    "name": "bookmarkURL",
+                    "type": "String",
+                    "info": "Recipe bookmark url.",
+                    "required": false
+                },
+                {
+                    "name": "bookmarkSiteLogo",
+                    "type": "String",
+                    "info": "Recipe bookmark site logo.",
+                    "required": false
+                },
+                {
+                    "name": "bookmarkImageURL",
+                    "type": "String",
+                    "info": "Recipe bookmark image url.",
+                    "required": false
+                },
+                {
+                    "name": "adTags",
+                    "type": "String",
+                    "info": "Recipe ad tags.",
+                    "required": false
+                },
+                {
+                    "name": "ingredientsTextBlock",
+                    "type": "String",
+                    "info": "Recipe ingredients text block.",
+                    "required": false
+                },
+                {
+                    "name": "allCategoriesText",
+                    "type": "String",
+                    "info": "Recipe all categories text.",
+                    "required": false
+                },
+                {
+                    "name": "isSponsored",
+                    "type": "Boolean",
+                    "info": "Recipe is sponsored.",
+                    "required": false
+                },
+                {
+                    "name": "collection",
+                    "type": "String",
+                    "info": "Recipe collection.",
+                    "required": false
+                },
+                {
+                    "name": "collectionID",
+                    "type": "Number",
+                    "info": "Recipe collection identifier.",
+                    "required": false
+                },
+                {
+                    "name": "adminBoost",
+                    "type": "Number",
+                    "info": "Recipe admin boost.",
+                    "required": false
+                },
+                {
+                    "name": "heroPhotoUrl",
+                    "type": "String",
+                    "info": "Recipe hero photo url.",
+                    "required": false
+                },
+                {
+                    "name": "poster",
+                    "type": "JSON",
+                    "info": "JSON Object, recipe poster.",
+                    "required": false
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
+            "name": "updateRecipeNutritionInfo",
+            "description": "Update a recipe nutrition info.",
+            "args": [
+                {
+                    "name": "apiKey",
+                    "type": "credentials",
+                    "info": "Your API Key.",
+                    "required": true
+                },
+                {
+                    "name": "bigovenUsername",
+                    "type": "String",
+                    "info": "Username of user.",
+                    "required": true
+                },
+                {
+                    "name": "bigovenPassword",
+                    "type": "String",
+                    "info": "Password of user.",
+                    "required": true
+                },
+                {
+                    "name": "recipeID",
+                    "type": "Number",
+                    "info": "Recipe identifier.",
+                    "required": true
+                },
+                {
+                    "name": "singularYieldUnit",
+                    "type": "Number",
+                    "info": "Recipe singular yield unit.",
+                    "required": false
+                },
+                {
+                    "name": "totalCalories",
+                    "type": "Number",
+                    "info": "Recipe total calories.",
+                    "required": false
+                },
+                {
+                    "name": "totalFat",
+                    "type": "Number",
+                    "info": "Recipe total fat.",
+                    "required": false
+                },
+                {
+                    "name": "caloriesFromFat",
+                    "type": "Number",
+                    "info": "Recipe calories from fat.",
+                    "required": false
+                },
+                {
+                    "name": "totalFatPct",
+                    "type": "Number",
+                    "info": "Recipe total fat pct.",
+                    "required": false
+                },
+                {
+                    "name": "satFat",
+                    "type": "Number",
+                    "info": "Recipe sat fat.",
+                    "required": false
+                },
+                {
+                    "name": "satFatPct",
+                    "type": "Number",
+                    "info": "Recipe sat fat pct.",
+                    "required": false
+                },
+                {
+                    "name": "monoFat",
+                    "type": "Number",
+                    "info": "Recipe mono fat.",
+                    "required": false
+                },
+                {
+                    "name": "polyFat",
+                    "type": "Number",
+                    "info": "Recipe poly fat.",
+                    "required": false
+                },
+                {
+                    "name": "transFat",
+                    "type": "Number",
+                    "info": "Recipe trans fat.",
+                    "required": false
+                },
+                {
+                    "name": "cholesterol",
+                    "type": "Number",
+                    "info": "Recipe cholesterol.",
+                    "required": false
+                },
+                {
+                    "name": "cholesterolPct",
+                    "type": "Number",
+                    "info": "Recipe cholesterol pct.",
+                    "required": false
+                },
+                {
+                    "name": "sodium",
+                    "type": "Number",
+                    "info": "Recipe sodium.",
+                    "required": false
+                },
+                {
+                    "name": "sodiumPct",
+                    "type": "Number",
+                    "info": "Recipe sodium pct.",
+                    "required": false
+                },
+                {
+                    "name": "potassium",
+                    "type": "Number",
+                    "info": "Recipe potassium.",
+                    "required": false
+                },
+                {
+                    "name": "potassiumPct",
+                    "type": "Number",
+                    "info": "Recipe potassium pct.",
+                    "required": false
+                },
+                {
+                    "name": "totalCarbs",
+                    "type": "Number",
+                    "info": "Recipe total carbs.",
+                    "required": false
+                },
+                {
+                    "name": "totalCarbsPct",
+                    "type": "Number",
+                    "info": "Recipe total carbs pct.",
+                    "required": false
+                },
+                {
+                    "name": "dietaryFiber",
+                    "type": "Number",
+                    "info": "Recipe dietary fiber.",
+                    "required": false
+                },
+                {
+                    "name": "dietaryFiberPct",
+                    "type": "Number",
+                    "info": "Recipe dietary fiber pct.",
+                    "required": false
+                },
+                {
+                    "name": "sugar",
+                    "type": "Number",
+                    "info": "Recipe sugar.",
+                    "required": false
+                },
+                {
+                    "name": "protein",
+                    "type": "Number",
+                    "info": "Recipe protein.",
+                    "required": false
+                },
+                {
+                    "name": "proteinPct",
+                    "type": "Number",
+                    "info": "Recipe protein pct.",
+                    "required": false
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
+            "name": "updateRecipeIngredients",
+            "description": "Update a recipe ingredients list.",
+            "args": [
+                {
+                    "name": "apiKey",
+                    "type": "credentials",
+                    "info": "Your API Key.",
+                    "required": true
+                },
+                {
+                    "name": "bigovenUsername",
+                    "type": "String",
+                    "info": "Username of user.",
+                    "required": true
+                },
+                {
+                    "name": "bigovenPassword",
+                    "type": "String",
+                    "info": "Password of user.",
+                    "required": true
+                },
+                {
+                    "name": "recipeID",
+                    "type": "Number",
+                    "info": "Recipe identifier.",
+                    "required": true
+                },
+                {
+                    "name": "ingredients",
+                    "type": "Array",
+                    "info": "Array of JSON objects, recipe ingredients list.",
                     "required": false
                 }
             ],
@@ -640,14 +1284,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -686,14 +1330,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 }
@@ -720,14 +1364,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -760,14 +1404,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -806,14 +1450,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -846,14 +1490,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -916,14 +1560,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -968,14 +1612,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1014,14 +1658,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1072,14 +1716,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1112,14 +1756,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1158,14 +1802,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1204,14 +1848,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1268,14 +1912,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1338,14 +1982,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1384,14 +2028,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1430,14 +2074,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1506,14 +2150,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1552,14 +2196,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1598,14 +2242,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1650,14 +2294,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1690,14 +2334,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1720,7 +2364,7 @@
                     "required": true
                 },
                 {
-                    "name": "makeAgain",
+                    "name": "sakeAgain",
                     "type": "String",
                     "info": "Review make again",
                     "required": true
@@ -1760,14 +2404,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1812,14 +2456,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -1852,14 +2496,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -2078,14 +2722,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 }
@@ -2112,14 +2756,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
@@ -2158,14 +2802,14 @@
                     "required": true
                 },
                 {
-                    "name": "credentialsUsername",
-                    "type": "credentials",
+                    "name": "bigovenUsername",
+                    "type": "String",
                     "info": "Username of user.",
                     "required": true
                 },
                 {
-                    "name": "credentialsPassword",
-                    "type": "credentials",
+                    "name": "bigovenPassword",
+                    "type": "String",
                     "info": "Password of user.",
                     "required": true
                 },
