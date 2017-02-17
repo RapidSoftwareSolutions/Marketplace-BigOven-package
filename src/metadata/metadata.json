@@ -2158,6 +2158,46 @@
             ]
         },
         {
+            "name": "deleteRecipeReview",
+            "description": "Delete recipe review.",
+            "args": [
+                {
+                    "name": "apiKey",
+                    "type": "credentials",
+                    "info": "Your API Key.",
+                    "required": true
+                },
+                {
+                    "name": "bigovenUsername",
+                    "type": "String",
+                    "info": "Username of user.",
+                    "required": true
+                },
+                {
+                    "name": "bigovenPassword",
+                    "type": "String",
+                    "info": "Password of user.",
+                    "required": true
+                },
+                {
+                    "name": "reviewId",
+                    "type": "String",
+                    "info": "The review identifier.",
+                    "required": true
+                }
+            ],
+            "callbacks": [
+                {
+                    "name": "error",
+                    "info": "Error"
+                },
+                {
+                    "name": "success",
+                    "info": "Success"
+                }
+            ]
+        },
+        {
             "name": "getRecipeReviews",
             "description": "Get paged list of reviews for a recipe. Each review will have at most one FeaturedReply, as well as a ReplyCount.",
             "args": [

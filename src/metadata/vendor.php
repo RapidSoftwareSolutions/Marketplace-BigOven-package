@@ -2152,6 +2152,46 @@ return array (
             ),
         ),
         array (
+            'name' => 'deleteRecipeReview',
+            'description' => 'Delete recipe review.',
+            'args' => array (
+                array (
+                    'name' => 'apiKey',
+                    'type' => 'credentials',
+                    'info' => 'Your API Key.',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'bigovenUsername',
+                    'type' => 'String',
+                    'info' => 'Username of user.',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'bigovenPassword',
+                    'type' => 'String',
+                    'info' => 'Password of user.',
+                    'required' => true,
+                ),
+                array (
+                    'name' => 'reviewId',
+                    'type' => 'String',
+                    'info' => 'The review identifier.',
+                    'required' => true,
+                ),
+            ),
+            'callbacks' => array (
+                array (
+                    'name' => 'error',
+                    'info' => 'Error',
+                ),
+                array (
+                    'name' => 'success',
+                    'info' => 'Success',
+                ),
+            ),
+        ),
+        array (
             'name' => 'getRecipeReviews',
             'description' => 'Get paged list of reviews for a recipe. Each review will have at most one FeaturedReply, as well as a ReplyCount.',
             'args' => array (
@@ -3079,6 +3119,16 @@ return array (
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/review',
             'method' => 'POST',
+        ),
+        'deleteRecipeReview' => array (
+            'dictionary' => array (
+                'apiKey' => 'apiKey',
+                'bigovenUsername' => 'bigovenUsername',
+                'bigovenPassword' => 'bigovenPassword',
+                'reviewId' => 'reviewId',
+            ),
+            'vendorUrl' => 'http://api2.bigoven.com/recipe/review/{{reviewId}}',
+            'method' => 'DELETE',
         ),
         'getRecipeReviews' => array (
             'dictionary' => array (

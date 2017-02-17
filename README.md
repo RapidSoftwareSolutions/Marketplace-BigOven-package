@@ -634,6 +634,16 @@ Add a new review. Only one review can be provided per {userId, recipeId} pair. O
 | activeMinutes  | String     | Review active minutes.
 | totalMinutes   | String     | Review total minutes.
 
+## BigOven.deleteRecipeReview
+Delete recipe review.
+
+| Field          | Type       | Description
+|----------------|------------|----------
+| apiKey         | credentials| Your API Key.
+| bigovenUsername| String     | Username of user.
+| bigovenPassword| String     | Password of user.
+| reviewId       | String     | The review identifier.
+
 ## BigOven.getRecipeReviews
 Get paged list of reviews for a recipe. Each review will have at most one FeaturedReply, as well as a ReplyCount.
 
