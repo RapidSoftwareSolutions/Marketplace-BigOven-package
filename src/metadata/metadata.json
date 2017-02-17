@@ -852,6 +852,12 @@
                     "required": true
                 },
                 {
+                    "name": "ingredients",
+                    "type": "Array",
+                    "info": "Array of JSON objects, recipe ingredients.",
+                    "required": true
+                },
+                {
                     "name": "title",
                     "type": "String",
                     "info": "Recipe title.",
@@ -1008,233 +1014,15 @@
                     "required": false
                 },
                 {
+                    "name": "nutritionInfo",
+                    "type": "JSON",
+                    "info": "JSON objects, recipe nutrition info.",
+                    "required": false
+                },
+                {
                     "name": "poster",
                     "type": "JSON",
                     "info": "JSON Object, recipe poster.",
-                    "required": false
-                }
-            ],
-            "callbacks": [
-                {
-                    "name": "error",
-                    "info": "Error"
-                },
-                {
-                    "name": "success",
-                    "info": "Success"
-                }
-            ]
-        },
-        {
-            "name": "updateRecipeNutritionInfo",
-            "description": "Update a recipe nutrition info.",
-            "args": [
-                {
-                    "name": "apiKey",
-                    "type": "credentials",
-                    "info": "Your API Key.",
-                    "required": true
-                },
-                {
-                    "name": "bigovenUsername",
-                    "type": "String",
-                    "info": "Username of user.",
-                    "required": true
-                },
-                {
-                    "name": "bigovenPassword",
-                    "type": "String",
-                    "info": "Password of user.",
-                    "required": true
-                },
-                {
-                    "name": "recipeID",
-                    "type": "Number",
-                    "info": "Recipe identifier.",
-                    "required": true
-                },
-                {
-                    "name": "singularYieldUnit",
-                    "type": "Number",
-                    "info": "Recipe singular yield unit.",
-                    "required": false
-                },
-                {
-                    "name": "totalCalories",
-                    "type": "Number",
-                    "info": "Recipe total calories.",
-                    "required": false
-                },
-                {
-                    "name": "totalFat",
-                    "type": "Number",
-                    "info": "Recipe total fat.",
-                    "required": false
-                },
-                {
-                    "name": "caloriesFromFat",
-                    "type": "Number",
-                    "info": "Recipe calories from fat.",
-                    "required": false
-                },
-                {
-                    "name": "totalFatPct",
-                    "type": "Number",
-                    "info": "Recipe total fat pct.",
-                    "required": false
-                },
-                {
-                    "name": "satFat",
-                    "type": "Number",
-                    "info": "Recipe sat fat.",
-                    "required": false
-                },
-                {
-                    "name": "satFatPct",
-                    "type": "Number",
-                    "info": "Recipe sat fat pct.",
-                    "required": false
-                },
-                {
-                    "name": "monoFat",
-                    "type": "Number",
-                    "info": "Recipe mono fat.",
-                    "required": false
-                },
-                {
-                    "name": "polyFat",
-                    "type": "Number",
-                    "info": "Recipe poly fat.",
-                    "required": false
-                },
-                {
-                    "name": "transFat",
-                    "type": "Number",
-                    "info": "Recipe trans fat.",
-                    "required": false
-                },
-                {
-                    "name": "cholesterol",
-                    "type": "Number",
-                    "info": "Recipe cholesterol.",
-                    "required": false
-                },
-                {
-                    "name": "cholesterolPct",
-                    "type": "Number",
-                    "info": "Recipe cholesterol pct.",
-                    "required": false
-                },
-                {
-                    "name": "sodium",
-                    "type": "Number",
-                    "info": "Recipe sodium.",
-                    "required": false
-                },
-                {
-                    "name": "sodiumPct",
-                    "type": "Number",
-                    "info": "Recipe sodium pct.",
-                    "required": false
-                },
-                {
-                    "name": "potassium",
-                    "type": "Number",
-                    "info": "Recipe potassium.",
-                    "required": false
-                },
-                {
-                    "name": "potassiumPct",
-                    "type": "Number",
-                    "info": "Recipe potassium pct.",
-                    "required": false
-                },
-                {
-                    "name": "totalCarbs",
-                    "type": "Number",
-                    "info": "Recipe total carbs.",
-                    "required": false
-                },
-                {
-                    "name": "totalCarbsPct",
-                    "type": "Number",
-                    "info": "Recipe total carbs pct.",
-                    "required": false
-                },
-                {
-                    "name": "dietaryFiber",
-                    "type": "Number",
-                    "info": "Recipe dietary fiber.",
-                    "required": false
-                },
-                {
-                    "name": "dietaryFiberPct",
-                    "type": "Number",
-                    "info": "Recipe dietary fiber pct.",
-                    "required": false
-                },
-                {
-                    "name": "sugar",
-                    "type": "Number",
-                    "info": "Recipe sugar.",
-                    "required": false
-                },
-                {
-                    "name": "protein",
-                    "type": "Number",
-                    "info": "Recipe protein.",
-                    "required": false
-                },
-                {
-                    "name": "proteinPct",
-                    "type": "Number",
-                    "info": "Recipe protein pct.",
-                    "required": false
-                }
-            ],
-            "callbacks": [
-                {
-                    "name": "error",
-                    "info": "Error"
-                },
-                {
-                    "name": "success",
-                    "info": "Success"
-                }
-            ]
-        },
-        {
-            "name": "updateRecipeIngredients",
-            "description": "Update a recipe ingredients list.",
-            "args": [
-                {
-                    "name": "apiKey",
-                    "type": "credentials",
-                    "info": "Your API Key.",
-                    "required": true
-                },
-                {
-                    "name": "bigovenUsername",
-                    "type": "String",
-                    "info": "Username of user.",
-                    "required": true
-                },
-                {
-                    "name": "bigovenPassword",
-                    "type": "String",
-                    "info": "Password of user.",
-                    "required": true
-                },
-                {
-                    "name": "recipeID",
-                    "type": "Number",
-                    "info": "Recipe identifier.",
-                    "required": true
-                },
-                {
-                    "name": "ingredients",
-                    "type": "Array",
-                    "info": "Array of JSON objects, recipe ingredients list.",
                     "required": false
                 }
             ],

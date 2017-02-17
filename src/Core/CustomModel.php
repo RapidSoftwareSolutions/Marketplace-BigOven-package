@@ -25,12 +25,4 @@ class CustomModel
 
         return json_encode($result);
     }
-
-    public static function updateRecipe($param, &$blockCustom, $vendorUrl){
-        return self::createRecipe($param, &$blockCustom, $vendorUrl);
-    }
-
-    public static function updateRecipeNutritionInfo($param, &$blockCustom, $vendorUrl){
-        return self::createRecipe($param, &$blockCustom, $vendorUrl);
-    }
 }
