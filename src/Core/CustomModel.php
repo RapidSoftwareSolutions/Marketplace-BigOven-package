@@ -21,8 +21,15 @@ class CustomModel
 
     public static function createRecipe($param, &$blockCustom, $vendorUrl){
         $result = $param;
-        $result['Ingredients'] = '[]';
+        $result['Ingredients'] = [];
 
         return json_encode($result);
+    }
+
+    public static function addRecipeImage($param, &$blockCustom, $vendorUrl){
+        $result = $param;
+        $result['image'] = file_get_contents($param['image']);
+
+        return $result;
     }
 }

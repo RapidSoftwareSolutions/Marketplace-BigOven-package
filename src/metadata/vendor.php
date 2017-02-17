@@ -1406,64 +1406,6 @@ return array (
             ),
         ),
         array (
-            'name' => 'createRecipeScan',
-            'description' => 'POST an image as a new RecipeScan.',
-            'args' => array (
-                array (
-                    'name' => 'apiKey',
-                    'type' => 'credentials',
-                    'info' => 'Your API Key.',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'bigovenUsername',
-                    'type' => 'String',
-                    'info' => 'Username of user.',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'bigovenPassword',
-                    'type' => 'String',
-                    'info' => 'Password of user.',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'test',
-                    'type' => 'Boolean',
-                    'info' => 'Test.',
-                    'required' => false,
-                ),
-                array (
-                    'name' => 'devicetype',
-                    'type' => 'String',
-                    'info' => 'Scan device type.',
-                    'required' => false,
-                ),
-                array (
-                    'name' => 'scanLatitude',
-                    'type' => 'Number',
-                    'info' => 'Scan position latitude.',
-                    'required' => false,
-                ),
-                array (
-                    'name' => 'scanLongitude',
-                    'type' => 'Number',
-                    'info' => 'Scan position longitude.',
-                    'required' => false,
-                ),
-            ),
-            'callbacks' => array (
-                array (
-                    'name' => 'error',
-                    'info' => 'Error',
-                ),
-                array (
-                    'name' => 'success',
-                    'info' => 'Success',
-                ),
-            ),
-        ),
-        array (
             'name' => 'deleteMySingleRecipe',
             'description' => 'Delete user single recipe.',
             'args' => array (
@@ -1627,7 +1569,7 @@ return array (
                     'name' => 'image',
                     'type' => 'File',
                     'info' => 'Image to adding.',
-                    'required' => false,
+                    'required' => true,
                 ),
                 array (
                     'name' => 'caption',
@@ -2137,46 +2079,6 @@ return array (
                     'name' => 'totalMinutes',
                     'type' => 'String',
                     'info' => 'Review total minutes.',
-                    'required' => true,
-                ),
-            ),
-            'callbacks' => array (
-                array (
-                    'name' => 'error',
-                    'info' => 'Error',
-                ),
-                array (
-                    'name' => 'success',
-                    'info' => 'Success',
-                ),
-            ),
-        ),
-        array (
-            'name' => 'deleteRecipeReview',
-            'description' => 'Delete recipe review.',
-            'args' => array (
-                array (
-                    'name' => 'apiKey',
-                    'type' => 'credentials',
-                    'info' => 'Your API Key.',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'bigovenUsername',
-                    'type' => 'String',
-                    'info' => 'Username of user.',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'bigovenPassword',
-                    'type' => 'String',
-                    'info' => 'Password of user.',
-                    'required' => true,
-                ),
-                array (
-                    'name' => 'reviewId',
-                    'type' => 'String',
-                    'info' => 'The review identifier.',
                     'required' => true,
                 ),
             ),
@@ -2950,19 +2852,6 @@ return array (
             'vendorUrl' => 'http://api2.bigoven.com/recipe/review/{{reviewId}}/replies',
             'method' => 'POST',
         ),
-        'createRecipeScan' => array (
-            'dictionary' => array (
-                'apiKey' => 'apiKey',
-                'bigovenUsername' => 'bigovenUsername',
-                'bigovenPassword' => 'bigovenPassword',
-                'test' => 'test',
-                'devicetype' => 'devicetype',
-                'scanLatitude' => 'lat',
-                'scanLongitude' => 'lng',
-            ),
-            'vendorUrl' => 'http://api2.bigoven.com/recipe/scan',
-            'method' => 'POST-GET',
-        ),
         'deleteMySingleRecipe' => array (
             'dictionary' => array (
                 'apiKey' => 'apiKey',
@@ -3001,12 +2890,14 @@ return array (
                 'bigovenUsername' => 'bigovenUsername',
                 'bigovenPassword' => 'bigovenPassword',
                 'recipeId' => 'recipeId',
+                'image' => 'image',
                 'caption' => 'caption',
                 'imageLatitude' => 'lat',
                 'imageLongitude' => 'lng',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/image',
             'method' => 'POST-GET',
+            'custom' => true,
         ),
         'createRecipeNote' => array (
             'dictionary' => array (
@@ -3119,16 +3010,6 @@ return array (
             ),
             'vendorUrl' => 'http://api2.bigoven.com/recipe/{{recipeId}}/review',
             'method' => 'POST',
-        ),
-        'deleteRecipeReview' => array (
-            'dictionary' => array (
-                'apiKey' => 'apiKey',
-                'bigovenUsername' => 'bigovenUsername',
-                'bigovenPassword' => 'bigovenPassword',
-                'reviewId' => 'reviewId',
-            ),
-            'vendorUrl' => 'http://api2.bigoven.com/recipe/review/{{reviewId}}',
-            'method' => 'DELETE',
         ),
         'getRecipeReviews' => array (
             'dictionary' => array (

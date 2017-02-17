@@ -1412,64 +1412,6 @@
             ]
         },
         {
-            "name": "createRecipeScan",
-            "description": "POST an image as a new RecipeScan.",
-            "args": [
-                {
-                    "name": "apiKey",
-                    "type": "credentials",
-                    "info": "Your API Key.",
-                    "required": true
-                },
-                {
-                    "name": "bigovenUsername",
-                    "type": "String",
-                    "info": "Username of user.",
-                    "required": true
-                },
-                {
-                    "name": "bigovenPassword",
-                    "type": "String",
-                    "info": "Password of user.",
-                    "required": true
-                },
-                {
-                    "name": "test",
-                    "type": "Boolean",
-                    "info": "Test.",
-                    "required": false
-                },
-                {
-                    "name": "devicetype",
-                    "type": "String",
-                    "info": "Scan device type.",
-                    "required": false
-                },
-                {
-                    "name": "scanLatitude",
-                    "type": "Number",
-                    "info": "Scan position latitude.",
-                    "required": false
-                },
-                {
-                    "name": "scanLongitude",
-                    "type": "Number",
-                    "info": "Scan position longitude.",
-                    "required": false
-                }
-            ],
-            "callbacks": [
-                {
-                    "name": "error",
-                    "info": "Error"
-                },
-                {
-                    "name": "success",
-                    "info": "Success"
-                }
-            ]
-        },
-        {
             "name": "deleteMySingleRecipe",
             "description": "Delete user single recipe.",
             "args": [
@@ -1633,7 +1575,7 @@
                     "name": "image",
                     "type": "File",
                     "info": "Image to adding.",
-                    "required": false
+                    "required": true
                 },
                 {
                     "name": "caption",
@@ -2143,46 +2085,6 @@
                     "name": "totalMinutes",
                     "type": "String",
                     "info": "Review total minutes.",
-                    "required": true
-                }
-            ],
-            "callbacks": [
-                {
-                    "name": "error",
-                    "info": "Error"
-                },
-                {
-                    "name": "success",
-                    "info": "Success"
-                }
-            ]
-        },
-        {
-            "name": "deleteRecipeReview",
-            "description": "Delete recipe review.",
-            "args": [
-                {
-                    "name": "apiKey",
-                    "type": "credentials",
-                    "info": "Your API Key.",
-                    "required": true
-                },
-                {
-                    "name": "bigovenUsername",
-                    "type": "String",
-                    "info": "Username of user.",
-                    "required": true
-                },
-                {
-                    "name": "bigovenPassword",
-                    "type": "String",
-                    "info": "Password of user.",
-                    "required": true
-                },
-                {
-                    "name": "reviewId",
-                    "type": "String",
-                    "info": "The review identifier.",
                     "required": true
                 }
             ],

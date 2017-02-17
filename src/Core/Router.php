@@ -296,7 +296,16 @@ class Router
             if($method == 'GET'){
                 $clientSetup['query'] = json_decode($sendBody, true);
             }elseif($method == 'POST-GET'){
-                $clientSetup['query'] = json_decode($sendBody, true);
+                if(isset($sendBody['image'])){
+                    unset($clientSetup['headers']['Content-Type']);
+                    unset($clientSetup['headers']['X-BigOven-API-Key']);
+                    $clientSetup['multipart'] = [[
+                            'name'     => 'file',
+                            'contents' => $sendBody['image']
+                        ]];
+                    unset($sendBody['image']);
+                }
+                $clientSetup['query'] = $sendBody;
                 $method = 'POST';
             }else{
                 $clientSetup['body'] = $sendBody;
