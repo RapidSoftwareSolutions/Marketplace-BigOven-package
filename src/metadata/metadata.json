@@ -436,7 +436,7 @@
                     "required": true
                 },
                 {
-                    "name": "GUID",
+                    "name": "guid",
                     "type": "String",
                     "info": "Grocery list item id (GUID).",
                     "required": true
@@ -476,7 +476,7 @@
                     "required": true
                 },
                 {
-                    "name": "GUID",
+                    "name": "guid",
                     "type": "String",
                     "info": "Grocery list item id (GUID).",
                     "required": true
@@ -2364,7 +2364,7 @@
                     "required": true
                 },
                 {
-                    "name": "sakeAgain",
+                    "name": "makeAgain",
                     "type": "String",
                     "info": "Review make again",
                     "required": true
