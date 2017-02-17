@@ -295,6 +295,9 @@ class Router
 
             if($method == 'GET'){
                 $clientSetup['query'] = json_decode($sendBody, true);
+            }elseif($method == 'POST-GET'){
+                $clientSetup['query'] = json_decode($sendBody, true);
+                $method = 'POST';
             }else{
                 $clientSetup['body'] = $sendBody;
             }
