@@ -2027,13 +2027,13 @@
                     "name": "pageNumber",
                     "type": "Number",
                     "info": "The page (int), starting with 1.",
-                    "required": true
+                    "required": false
                 },
                 {
                     "name": "resultsPerPage",
                     "type": "Number",
                     "info": "Results per page (int).",
-                    "required": true
+                    "required": false
                 }
             ],
             "callbacks": [

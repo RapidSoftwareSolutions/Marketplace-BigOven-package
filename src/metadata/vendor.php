@@ -2021,13 +2021,13 @@ return array (
                     'name' => 'pageNumber',
                     'type' => 'Number',
                     'info' => 'The page (int), starting with 1.',
-                    'required' => true,
+                    'required' => false,
                 ),
                 array (
                     'name' => 'resultsPerPage',
                     'type' => 'Number',
                     'info' => 'Results per page (int).',
-                    'required' => true,
+                    'required' => false,
                 ),
             ),
             'callbacks' => array (
