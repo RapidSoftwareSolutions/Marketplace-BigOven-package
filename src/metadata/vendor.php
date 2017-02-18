@@ -1269,7 +1269,7 @@ return array (
                     'name' => 'reviewStarRating',
                     'type' => 'String',
                     'info' => 'Review star rating.',
-                    'required' => false,
+                    'required' => true,
                 ),
                 array (
                     'name' => 'reviewMakeAgain',
@@ -1963,13 +1963,13 @@ return array (
                     'name' => 'pageNumber',
                     'type' => 'Number',
                     'info' => 'The page (int), starting with 1.',
-                    'required' => false,
+                    'required' => true,
                 ),
                 array (
                     'name' => 'resultsPerPage',
                     'type' => 'Number',
                     'info' => 'Results per page (int).',
-                    'required' => false,
+                    'required' => true,
                 ),
             ),
             'callbacks' => array (
