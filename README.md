@@ -6,8 +6,10 @@ Connect to the BigOven recipe API to search and display 350,000+ recipes, review
 * Credentials: apiKey
 
 ## How to get credentials: 
-0. Item one 
-1. Item two 
+0. Sign up in [BigOven](http://www.bigoven.com/account/join).
+1. Navigate to [Get Developer Key section](http://api2.bigoven.com/web/console/getkey).
+2. Choose Key level and click "Get My Key".
+3. Make payment and receive your API key, which used in all blocks of package as credential field.
 
 ## BigOven.getSingleRecipeCollection
 Gets a recipe collection. A recipe collection is a curated set of recipes.
@@ -20,7 +22,6 @@ Gets a recipe collection. A recipe collection is a curated set of recipes.
 | collectionId     | Number     | The collection identifier.
 | resultsPerPage   | Number     | Results per page (int).
 | pageNumber       | Number     | The page (int), starting with 1.
-| test             | Boolean    | Test (Boolean).
 | sessionForLogging| String     | Session for logging.
 
 ## BigOven.getRecipeCollectionMetadata
@@ -41,7 +42,6 @@ Get the list of current, seasonal recipe collections. From here, you can use the
 | apiKey         | credentials| Your API Key.
 | bigovenUsername| String     | Username of user.
 | bigovenPassword| String     | Password of user.
-| test           | String     | Test.
 
 ## BigOven.getFoodGlossaryArticleByTerm
 Get food glossary article by term (e.g., asparagus). This editorial is (c) BigOven and MUST carry attribution and a link back to the glossary entry on BigOven.com.

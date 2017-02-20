@@ -58,12 +58,6 @@
                     "required": false
                 },
                 {
-                    "name": "test",
-                    "type": "Boolean",
-                    "info": "Test (Boolean).",
-                    "required": false
-                },
-                {
                     "name": "sessionForLogging",
                     "type": "String",
                     "info": "Session for logging.",
@@ -142,12 +136,6 @@
                     "type": "String",
                     "info": "Password of user.",
                     "required": true
-                },
-                {
-                    "name": "test",
-                    "type": "String",
-                    "info": "Test.",
-                    "required": false
                 }
             ],
             "callbacks": [

@@ -52,12 +52,6 @@ return array (
                     'required' => false,
                 ),
                 array (
-                    'name' => 'test',
-                    'type' => 'Boolean',
-                    'info' => 'Test (Boolean).',
-                    'required' => false,
-                ),
-                array (
                     'name' => 'sessionForLogging',
                     'type' => 'String',
                     'info' => 'Session for logging.',
@@ -136,12 +130,6 @@ return array (
                     'type' => 'String',
                     'info' => 'Password of user.',
                     'required' => true,
-                ),
-                array (
-                    'name' => 'test',
-                    'type' => 'String',
-                    'info' => 'Test.',
-                    'required' => false,
                 ),
             ),
             'callbacks' => array (
@@ -2547,7 +2535,6 @@ return array (
                 'collectionId' => 'id',
                 'resultsPerPage' => 'rpp',
                 'pageNumber' => 'pg',
-                'test' => 'test',
                 'sessionForLogging' => 'sessionForLogging',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/collection/{{collectionId}}',
@@ -2568,7 +2555,6 @@ return array (
                 'apiKey' => 'apiKey',
                 'bigovenUsername' => 'bigovenUsername',
                 'bigovenPassword' => 'bigovenPassword',
-                'test' => 'test',
             ),
             'vendorUrl' => 'http://api2.bigoven.com/collections',
             'method' => 'GET',
