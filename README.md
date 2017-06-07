@@ -11,6 +11,16 @@ Connect to the BigOven recipe API to search and display 350,000+ recipes, review
 2. Choose Key level and click "Get My Key".
 3. Make payment and receive your API key, which used in all blocks of package as credential field.
 
+## Custom datatypes: 
+ |Datatype|Description|Example
+ |--------|-----------|----------
+ |Datepicker|String which includes date and time|```2016-05-28 00:00:00```
+ |Map|String which includes latitude and longitude coma separated|```50.37, 26.56```
+ |List|Simple array|```["123", "sample"]``` 
+ |Select|String with predefined values|```sample```
+ |Array|Array of objects|```[{"Second name":"123","Age":"12","Photo":"sdf","Draft":"sdfsdf"},{"name":"adi","Second name":"bla","Age":"4","Photo":"asfserwe","Draft":"sdfsdf"}] ```
+ 
+
 ## BigOven.getSingleRecipeCollection
 Gets a recipe collection. A recipe collection is a curated set of recipes.
 
@@ -150,8 +160,8 @@ Synchronize the grocery list.
 | apiKey          | credentials| Your API Key.
 | bigovenUsername | String     | Username of user.
 | bigovenPassword | String     | Password of user.
-| requisiteItems  | Array      | Array of JSON objects, grocery list items.
-| requisiteRecipes| Array      | Array of JSON objects, grocery list recipes.
+| requisiteItems  | List      | Array of JSON objects, grocery list items.
+| requisiteRecipes| List      | Array of JSON objects, grocery list recipes.
 | since           | String     | Grocery since.
 
 #### Example of requisiteItems input format
@@ -273,7 +283,7 @@ Update a recipe.
 | bigovenUsername     | String     | Username of user.
 | bigovenPassword     | String     | Password of user.
 | recipeID            | Number     | Recipe identifier.
-| ingredients         | Array      | Array of JSON objects, recipe ingredients.
+| ingredients         | List      | Array of JSON objects, recipe ingredients.
 | title               | String     | Recipe title.
 | description         | String     | Recipe description.
 | category            | String     | Recipe category.
@@ -654,7 +664,7 @@ Search for recipes. There are many parameters that you can apply.
 | searchAnywhereByKeyword| String     | Search anywhere in the recipe for the keyword.
 | folder                 | String     | Search in a specific folder name for the authenticated user.
 | collectionId           | Number     | Limit to a collection ID number.
-| filter                 | String     | Optionally set to either "myrecipes", "try", "favorites","added" to filter to just the authenticated user's recipe set.
+| filter                 | Select     | Optionally set to either "myrecipes", "try", "favorites","added" to filter to just the authenticated user's recipe set.
 | searchInTitleByKeyword | String     | Search just in the recipe title for the keyword.
 | userId                 | Number     | Set the target userid to search their public recipes.
 | username               | String     | Set the target username to search their public recipes.
